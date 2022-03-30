@@ -6,8 +6,7 @@ import Footer from "./components/Footer";
 import TopNavigation from "./components/TopNavigation";
 
 const Layout = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const { themes, dark, light, darkMode, handleToggleTheme } = useTheme();
+  const { dark, light, darkMode } = useTheme();
 
   return (
     <>
@@ -16,8 +15,8 @@ const Layout = () => {
         className="main"
         style={
           darkMode
-            ? { color: "white", backgroundColor: "black" }
-            : { color: "black", backgroundColor: "white" }
+            ? { color: light, backgroundColor: dark }
+            : { color: dark, backgroundColor: light }
         }
       >
         <Container fluid className="p-0">

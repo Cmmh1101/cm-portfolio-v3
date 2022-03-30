@@ -12,11 +12,8 @@ import { useTheme } from "../../provider/ThemeModeProvider";
 import ToggleLangButton from "./ToggleLangButton";
 import ToggleModeButton from "./ToggleModeButton";
 
-interface Props {}
-
-const TopNavigation = (props: Props) => {
+const TopNavigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { themes, dark, light, darkMode, handleToggleTheme } = useTheme();
 
   const toggle = () => {
     setIsOpen(!isOpen);

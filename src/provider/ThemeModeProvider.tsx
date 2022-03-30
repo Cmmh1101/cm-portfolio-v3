@@ -11,7 +11,7 @@ function useTheme() {
 
 const ThemeModeProvider = (props: { children: ReactNode }) => {
   const [darkMode, setDarkMode] = useState(false);
-  const [englishMode, setEnglishMode] = useState(true);
+  const [englishMode, setEnglishMode] = useState(false);
 
   const handleToggleLanguage = () => {
     setEnglishMode(!englishMode);

@@ -1,19 +1,20 @@
-import src from "*.avif";
-import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useTheme } from "../../provider/ThemeModeProvider";
 
-interface Props {}
-
-const ToggleLangButton = (props: Props) => {
+const ToggleLangButton = () => {
   const { handleToggleLanguage, englishMode } = useTheme();
 
   return (
     <button
       style={
         englishMode
-          ? { backgroundColor: "red", color: "white" }
+          ? {
+              backgroundImage:
+                "url(" + "../../../images/general/usaflag.png" + ")",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+            }
           : {
               backgroundImage:
                 "url(" + "../../../images/general/espFlag.png" + ")",
@@ -25,9 +26,7 @@ const ToggleLangButton = (props: Props) => {
       className="theme-btn lang-btn"
       type="button"
       onClick={handleToggleLanguage}
-    >
-      {englishMode ? "En" : ""}
-    </button>
+    ></button>
   );
 };
 
