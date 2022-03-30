@@ -1,0 +1,29 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  .nav-links {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button,
+    a {
+      margin: 0 15px;
+    }
+  }
+}
+
+.theme-btn {
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+
+.lang-btn {
+  width: 22px;
+  height: 22px;
+}

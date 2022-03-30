@@ -9,49 +9,36 @@ import {
   NavItem,
 } from "reactstrap";
 import { useTheme } from "../../provider/ThemeModeProvider";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import ToggleLangButton from "./ToggleLangButton";
+import ToggleModeButton from "./ToggleModeButton";
 
 interface Props {}
 
 const TopNavigation = (props: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   const { themes, dark, light, darkMode, handleToggleTheme } = useTheme();
+
   const toggle = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <div>
-      <Navbar color="faded" dark>
-        <NavbarBrand className="me-auto" href="/">
-          Carla Montano
-        </NavbarBrand>
+    <nav>
+      <Navbar fixed="top" color="faded" expand="md" dark className="navigation">
+        <NavbarBrand href="/">Carla Montano</NavbarBrand>
         <NavbarToggler className="me-2" onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav navbar>
-            <NavItem>
-              <button
-                style={
-                  darkMode
-                    ? { color: "white", backgroundColor: "black" }
-                    : { color: "black", backgroundColor: "white" }
-                }
-                className="theme-btn"
-                type="button"
-                onClick={handleToggleTheme}
-              >
-                {darkMode ? (
-                  <FontAwesomeIcon icon={faMoon} className="" />
-                ) : (
-                  <FontAwesomeIcon icon={faSun} className="" />
-                )}
-              </button>
+          <Nav navbar className="nav-links">
+            <NavItem className="my-2 my-md-0">
+              <ToggleModeButton />
             </NavItem>
-            <NavItem>
+            <NavItem className="my-2 my-md-0">
+              <ToggleLangButton />
+            </NavItem>
+            <NavItem className="my-2 my-md-0">
               <NavLink to="/">Home</NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="my-2 my-md-0">
               <NavLink to="https://github.com/reactstrap/reactstrap">
                 GitHub
               </NavLink>
@@ -59,7 +46,7 @@ const TopNavigation = (props: Props) => {
           </Nav>
         </Collapse>
       </Navbar>
-    </div>
+    </nav>
   );
 };
 

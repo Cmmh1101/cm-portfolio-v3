@@ -1,9 +1,15 @@
 import React from "react";
+import { useTheme } from "../../provider/ThemeModeProvider";
+import Hero from "./components/Hero";
 
 const HomePage = () => {
+  const { englishMode } = useTheme();
   return (
     <>
-      <h1>Home Page</h1>
+      <Hero />
+      <h1 style={{ height: "300px" }}>
+        {englishMode ? "Inicio en espanol" : "Home page in english"}
+      </h1>
     </>
   );
 };
