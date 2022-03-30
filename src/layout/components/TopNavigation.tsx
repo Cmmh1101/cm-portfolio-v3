@@ -8,11 +8,15 @@ import {
   NavbarToggler,
   NavItem,
 } from "reactstrap";
+import { useTheme } from "../../provider/ThemeModeProvider";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
 interface Props {}
 
 const TopNavigation = (props: Props) => {
   const [isOpen, setIsOpen] = useState(false);
+  const { themes, dark, light, darkMode, handleToggleTheme } = useTheme();
   const toggle = () => {
     setIsOpen(!isOpen);
   };
@@ -26,6 +30,24 @@ const TopNavigation = (props: Props) => {
         <NavbarToggler className="me-2" onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav navbar>
+            <NavItem>
+              <button
+                style={
+                  darkMode
+                    ? { color: "white", backgroundColor: "black" }
+                    : { color: "black", backgroundColor: "white" }
+                }
+                className="theme-btn"
+                type="button"
+                onClick={handleToggleTheme}
+              >
+                {darkMode ? (
+                  <FontAwesomeIcon icon={faMoon} className="" />
+                ) : (
+                  <FontAwesomeIcon icon={faSun} className="" />
+                )}
+              </button>
+            </NavItem>
             <NavItem>
               <NavLink to="/">Home</NavLink>
             </NavItem>
