@@ -1,12 +1,16 @@
-body {
-  background-color: black;
-}
+$dark: #15141a;
+$dark-gray: #23222b;
+$light: #fbfbfe;
+
+// body {
+//   background-color: $dark;
+// }
 
 .hero-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  color: white;
-  background-color: black !important;
+  color: $light;
+  background-color: $dark !important;
 }

@@ -2,17 +2,20 @@ main {
   transition: all 0.8s ease-in-out;
 }
 
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  .nav-links {
-    margin: 0 auto;
+nav {
+  background-color: $dark;
+  border-bottom: 2px solid $dark-gray;
+  .navigation {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    button,
-    a {
-      margin: 0 15px;
+    .nav-links {
+      margin-left: auto;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      button,
+      a {
+        margin: 0 15px;
+      }
     }
   }
 }

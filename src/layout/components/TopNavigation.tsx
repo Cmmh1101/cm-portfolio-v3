@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import {
   Collapse,
+  Container,
   Nav,
   Navbar,
   NavbarBrand,
   NavbarToggler,
   NavItem,
 } from "reactstrap";
-import { useTheme } from "../../provider/ThemeModeProvider";
 import ToggleLangButton from "./ToggleLangButton";
 import ToggleModeButton from "./ToggleModeButton";
 
@@ -21,10 +21,13 @@ const TopNavigation = () => {
 
   return (
     <nav>
-      <Navbar fixed="top" color="faded" expand="md" dark className="navigation">
-        <NavbarBrand href="/">Carla Montano</NavbarBrand>
+      <Navbar fixed="top" expand="md" dark className="navigation shadow">
+        <NavbarBrand href="/">
+          <img src="../../../logobrand.png" alt="Logo" />
+          Carla Montano
+        </NavbarBrand>
         <NavbarToggler className="me-2" onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
+        <Collapse isOpen={isOpen} navbar className="">
           <Nav navbar className="nav-links">
             <NavItem className="my-2 my-md-0">
               <ToggleModeButton />

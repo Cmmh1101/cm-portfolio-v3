@@ -20,8 +20,8 @@ const ThemeModeProvider = (props: { children: ReactNode }) => {
   const handleToggleTheme = () => {
     setDarkMode(!darkMode);
   };
-  const dark = "#000";
-  const light = "#fff";
+  const dark = "#15141a";
+  const light = "#fbfbfe";
 
   const themes = {
     light: {
