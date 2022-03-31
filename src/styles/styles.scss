@@ -1,10 +1,9 @@
 $dark: #15141a;
 $dark-gray: #23222b;
 $light: #fbfbfe;
-
-// body {
-//   background-color: $dark;
-// }
+$mid-blue: #0554f2;
+$light-blue: #196eff;
+$dark-blue: #013cc9;
 
 .hero-container {
   display: flex;
@@ -13,4 +12,15 @@ $light: #fbfbfe;
   height: 100vh;
   color: $light;
   background-color: $dark !important;
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    border-left: 3px solid $light-blue;
+    h1 {
+      margin-left: 15px;
+    }
+    p {
+      margin: 0 0 0 15px;
+    }
+  }
 }

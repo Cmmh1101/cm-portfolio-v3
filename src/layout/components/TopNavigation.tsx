@@ -22,9 +22,8 @@ const TopNavigation = () => {
   return (
     <nav>
       <Navbar fixed="top" expand="md" dark className="navigation shadow">
-        <NavbarBrand href="/">
+        <NavbarBrand href="/" className="logo-container">
           <img src="../../../logobrand.png" alt="Logo" />
-          Carla Montano
         </NavbarBrand>
         <NavbarToggler className="me-2" onClick={toggle} />
         <Collapse isOpen={isOpen} navbar className="">

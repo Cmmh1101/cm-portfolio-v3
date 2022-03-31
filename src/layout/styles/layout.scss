@@ -7,6 +7,12 @@ nav {
   border-bottom: 2px solid $dark-gray;
   .navigation {
     display: flex;
+    .logo-container {
+      width: 250px;
+      img {
+        width: 100%;
+      }
+    }
     .nav-links {
       margin-left: auto;
       display: flex;
