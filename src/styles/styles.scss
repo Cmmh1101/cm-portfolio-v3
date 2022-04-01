@@ -4,6 +4,7 @@ $light: #fbfbfe;
 $mid-blue: #0554f2;
 $light-blue: #196eff;
 $dark-blue: #013cc9;
+$transition: all 0.3s ease-in-out;
 
 .hero-container {
   display: flex;
@@ -16,11 +17,33 @@ $dark-blue: #013cc9;
     display: flex;
     flex-direction: column;
     border-left: 3px solid $light-blue;
+    padding: 0 15px;
     h1 {
-      margin-left: 15px;
+      font-size: 2.5rem;
     }
-    p {
-      margin: 0 0 0 15px;
+    button {
+      color: $light;
+      border: 2px solid $light;
+      outline: none;
+      width: 200px;
+      transition: $transition;
+      &:hover {
+        color: $light-blue;
+        background-color: $light;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.follow-icons {
+  .icon {
+    font-size: 3rem;
+    color: $light;
+    &:hover {
+      color: $light-blue;
     }
   }
 }
