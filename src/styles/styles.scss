@@ -17,9 +17,15 @@ $transition: all 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
     border-left: 3px solid $light-blue;
-    padding: 0 15px;
+    padding: 0 24px;
     h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
+      font-weight: 900;
+      margin: 0 0 20px;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 0 0 30px;
     }
     button {
       color: $light;
@@ -42,8 +48,24 @@ $transition: all 0.3s ease-in-out;
   .icon {
     font-size: 3rem;
     color: $light;
+    padding: 0 3px;
+    transition: $transition;
     &:hover {
       color: $light-blue;
+      background-color: $light;
     }
   }
 }
+
+// projects section
+
+.sub-header {
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+}
+
+// .projects-section {
+
+// }
