@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "reactstrap";
 import SubHeader from "../../../utils/SubHeader";
+import Project from "./Project";
 import ProjectsList from "./ProjectsList";
 
 const Projects = () => {

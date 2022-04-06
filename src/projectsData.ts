@@ -10,7 +10,8 @@ const projects = [
       enDescription: "Full stack Personal blog project, using Reactjs and Typescript for frontend, and node and mongo for backend and database respertively",
       enAlt: "Project demo",
       featured: "true",
-      type: "fullstack"
+      type: "fullstack",
+      technologies: 'ReactJs MongoDB NodeJs Express'
       },
       {
       name: "hunger-relief",
@@ -23,7 +24,8 @@ const projects = [
       enDescription: "Full stack Personal blog project, using Reactjs and Typescript for frontend, and node and mongo for backend and database respertively",
       enAlt: "Project demo",
       featured: "true",
-      type: "Frontend"
+      type: "Frontend",
+      technologies: 'HTML CSS Reactstrap ReactJs'
       },
       {
       name: "hunger-relief",
@@ -34,10 +36,10 @@ const projects = [
       icon: "",
       spDescription: "Mi blog personal es un proyecto full stack, utilizando Reactjs y Typescript para el fronend y nodejs, express y mongodb para el backedn y base de datos",
       enDescription: "Full stack Personal blog project, using Reactjs and Typescript for frontend, and node and mongo for backend and database respertively",
-      
       enAlt: "Non-profit or",
       featured: "true",
-      type: "CMS"
+      type: "CMS",
+      technologies: 'HTML CSS WordPress Divi'
       },
       {
       name: "hunger-relief",
@@ -50,7 +52,8 @@ const projects = [
       enDescription: "Full stack Personal blog project, using Reactjs and Typescript for frontend, and node and mongo for backend and database respertively",
       enAlt: "Project demo",
       featured: "true",
-      type: "CMS"
+      type: "Frontend",
+      technologies: 'HTML CSS Reactstrap ReactJs'
       },
       
 ];
