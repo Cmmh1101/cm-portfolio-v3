@@ -28,32 +28,34 @@ const Project = (props: Props) => {
         className="d-flex flex-wrap justify-content-center align-items-center"
       >
         {projectsData.map((project) => (
-          <>
-            <Card className="col-12 col-md-5 my-4 mx-2">
-              <CardImg
-                alt={project.enAlt}
-                src="https://picsum.photos/318/180"
-                top
-                width="100%"
-              />
-              <CardBody>
-                <CardTitle tag="h5">
-                  {englishMode ? project.spTitle : project.enTitle}
-                </CardTitle>
-                <CardText>
-                  <small className="text-muted">
-                    {project.technologies.trim().split(/\s+/).join(" | ")}
-                  </small>
-                </CardText>
-                <CardText>
-                  {englishMode ? project.spDescription : project.enDescription}
-                </CardText>
-                <CardText>
-                  <small className="text-muted">{project.date}</small>
-                </CardText>
-              </CardBody>
-            </Card>
-          </>
+          <Card
+            key={project.name}
+            className="col-12 col-md-5 my-4 mx-2 project-box"
+          >
+            <CardImg
+              tag="img"
+              alt={project.enAlt}
+              src="https://picsum.photos/318/180"
+              top
+              width="100%"
+            />
+            <CardBody>
+              <CardTitle tag="h5">
+                {englishMode ? project.spTitle : project.enTitle}
+              </CardTitle>
+              <CardText>
+                <small className="text-muted">
+                  {project.technologies.trim().split(/\s+/).join(" | ")}
+                </small>
+              </CardText>
+              <CardText>
+                {englishMode ? project.spDescription : project.enDescription}
+              </CardText>
+              <CardText>
+                <small className="text-muted">{project.date}</small>
+              </CardText>
+            </CardBody>
+          </Card>
         ))}
       </Col>
     </Row>
