@@ -31,11 +31,16 @@ export interface Project {
 const ProjectsList = () => {
   const { englishMode, darkMode, dark } = useTheme();
   const [filteredProjects, setFilteredProjects] = useState<Project[]>();
+  //   const [clicked, setClicked] = useState<boolean>(false);
 
   const front = projectsData.filter((p) => p.type === "frontend");
   const fullstack = projectsData.filter((p) => p.type === "fullstack");
   const cms = projectsData.filter((p) => p.type === "cms");
   const all = projectsData.filter((p) => p.all === "true");
+
+  //   const buttonClicked = () => {
+  //     setClicked(!clicked);
+  //   };
 
   const handleFrontButton = () => {
     setFilteredProjects(front);
@@ -56,7 +61,7 @@ const ProjectsList = () => {
 
   return (
     <div>
-      <ButtonGroup className="col-12">
+      <ButtonGroup className="col-12 button-group">
         <Button onClick={() => handleFrontButton()}>Front End</Button>
         <Button onClick={() => handleFullButton()}>Full Stack</Button>
         <Button onClick={() => handleCmsButton()}>CMS</Button>

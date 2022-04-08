@@ -66,6 +66,25 @@ $transition: all 0.3s ease-in-out;
   }
 }
 
+.button-group {
+  button {
+    background-color: $light-blue;
+    outline: none;
+    border: 2px solid $mid-blue;
+    &:hover {
+      background-color: $light;
+      color: $light-blue;
+      border: 2px solid $mid-blue;
+    }
+    &:focus {
+      background-color: $light;
+      color: $light-blue;
+      border: 2px solid $mid-blue;
+      outline: none;
+    }
+  }
+}
+
 .project-box {
   .image-container {
     overflow: hidden;
