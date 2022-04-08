@@ -1,6 +1,6 @@
 const projects = [
       {
-      name: "hunger-relief",
+      name: "blog",
       spTitle: "Mi Blog",
       enTitle: "My Blog",
       date: "08/04/2021",
@@ -11,10 +11,11 @@ const projects = [
       enAlt: "Project demo",
       featured: "true",
       type: "fullstack",
-      technologies: 'ReactJs MongoDB NodeJs Express'
+      technologies: 'ReactJs MongoDB NodeJs Express',
+      all: 'true'
       },
       {
-      name: "hunger-relief",
+      name: "hope-for-the-nations",
       spTitle: "Organizacion Pagina web",
       enTitle: "Non-Profit Website",
       date: "08/04/2021",
@@ -24,11 +25,12 @@ const projects = [
       enDescription: "Full stack Personal blog project, using Reactjs and Typescript for frontend, and node and mongo for backend and database respertively",
       enAlt: "Project demo",
       featured: "true",
-      type: "Frontend",
-      technologies: 'HTML CSS Reactstrap ReactJs'
+      type: "frontend",
+      technologies: 'HTML CSS Reactstrap ReactJs',
+      all: 'true'
       },
       {
-      name: "hunger-relief",
+      name: "serving-in-christ",
       spTitle: "Organizacion Pagina Web",
       enTitle: "Non-Profit Website",
       date: "08/04/2021",
@@ -38,11 +40,12 @@ const projects = [
       enDescription: "Full stack Personal blog project, using Reactjs and Typescript for frontend, and node and mongo for backend and database respertively",
       enAlt: "Non-profit or",
       featured: "true",
-      type: "CMS",
-      technologies: 'HTML CSS WordPress Divi'
+      type: "cms",
+      technologies: 'HTML CSS WordPress Divi',
+      all: 'true'
       },
       {
-      name: "hunger-relief",
+      name: "war-game",
       spTitle: "Juego Interactivo",
       enTitle: "Interactive Game",
       date: "08/04/2021",
@@ -52,11 +55,12 @@ const projects = [
       enDescription: "Full stack Personal blog project, using Reactjs and Typescript for frontend, and node and mongo for backend and database respertively",
       enAlt: "Project demo",
       featured: "true",
-      type: "Frontend",
-      technologies: 'HTML CSS Reactstrap ReactJs'
+      type: "frontend",
+      technologies: 'HTML CSS Reactstrap ReactJs',
+      all: 'true'
       },
       {
-      name: "hunger-relief",
+      name: "language-game",
       spTitle: "Juego Interactivo de idiomas",
       enTitle: "Interactive Language Game",
       date: "08/04/2021",
@@ -66,11 +70,12 @@ const projects = [
       enDescription: "Full stack Personal blog project, using Reactjs and Typescript for frontend, and node and mongo for backend and database respertively",
       enAlt: "Project demo",
       featured: "true",
-      type: "Frontend",
-      technologies: 'HTML CSS Reactstrap ReactJs'
+      type: "frontend",
+      technologies: 'HTML CSS Reactstrap ReactJs',
+      all: 'true'
       },
       {
-      name: "hunger-relief",
+      name: "law-firm",
       spTitle: "Firma de abogados",
       enTitle: "Law Firm Landing Page",
       date: "08/04/2021",
@@ -80,8 +85,9 @@ const projects = [
       enDescription: "Full stack Personal blog project, using Reactjs and Typescript for frontend, and node and mongo for backend and database respertively",
       enAlt: "Project demo",
       featured: "true",
-      type: "Frontend",
-      technologies: 'HTML CSS Reactstrap ReactJs'
+      type: "frontend",
+      technologies: 'HTML CSS Reactstrap ReactJs',
+      all: 'true'
       },
       
 ];

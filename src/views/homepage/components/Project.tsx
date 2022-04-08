@@ -12,6 +12,8 @@ import {
 import { useTheme } from "../../../provider/ThemeModeProvider";
 import projectsData from "../../../projectsData";
 
+interface Props {}
+
 const Project = () => {
   const { englishMode, darkMode, dark, light } = useTheme();
   return (
