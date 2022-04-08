@@ -12,15 +12,8 @@ import {
 import { useTheme } from "../../../provider/ThemeModeProvider";
 import projectsData from "../../../projectsData";
 
-interface Props {
-  // image: string
-  // altText: string
-  // techs?: []
-  // enTitle
-}
-
-const Project = (props: Props) => {
-  const { englishMode } = useTheme();
+const Project = () => {
+  const { englishMode, darkMode, dark, light } = useTheme();
   return (
     <Row>
       <Col
@@ -31,14 +24,17 @@ const Project = (props: Props) => {
           <Card
             key={project.name}
             className="col-12 col-md-5 my-4 mx-2 project-box"
+            style={darkMode ? { color: `${dark}` } : {}}
           >
-            <CardImg
-              tag="img"
-              alt={project.enAlt}
-              src="https://picsum.photos/318/180"
-              top
-              width="100%"
-            />
+            <div className="image-container">
+              <CardImg
+                tag="img"
+                alt={project.enAlt}
+                src={project.image}
+                top
+                width="100%"
+              />
+            </div>
             <CardBody>
               <CardTitle tag="h5">
                 {englishMode ? project.spTitle : project.enTitle}
