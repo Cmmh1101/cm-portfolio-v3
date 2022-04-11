@@ -85,6 +85,15 @@ $transition: all 0.3s ease-in-out;
   }
 }
 
+.front-isible {
+  background-color: $light-blue;
+  opacity: 1;
+}
+
+.no-visible {
+  opacity: 0;
+}
+
 .project-box {
   .image-container {
     overflow: hidden;

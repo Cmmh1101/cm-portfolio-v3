@@ -1,62 +1,78 @@
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Card,
   CardImg,
   CardBody,
   CardTitle,
   CardText,
-  Container,
   Col,
   Row,
+  Button,
 } from "reactstrap";
 import { useTheme } from "../../../provider/ThemeModeProvider";
-import projectsData from "../../../projectsData";
 
-interface Props {}
+interface Props {
+  name: string;
+  enAlt: string;
+  image: string;
+  enTitle: string;
+  spTitle: string;
+  spDescription: string;
+  enDescription: string;
+  technologies: string;
+  date: string;
+  customClass: string;
+  page: string;
+  repo: string;
+}
 
-const Project = () => {
+const Project = ({
+  name,
+  enAlt,
+  image,
+  enTitle,
+  spTitle,
+  spDescription,
+  enDescription,
+  technologies,
+  customClass,
+  date,
+  page,
+  repo,
+}: Props) => {
   const { englishMode, darkMode, dark, light } = useTheme();
   return (
-    <Row>
-      <Col
-        xs={12}
-        className="d-flex flex-wrap justify-content-center align-items-center"
-      >
-        {projectsData.map((project) => (
-          <Card
-            key={project.name}
-            className="col-12 col-md-5 my-4 mx-2 project-box"
-            style={darkMode ? { color: `${dark}` } : {}}
-          >
-            <div className="image-container">
-              <CardImg
-                tag="img"
-                alt={project.enAlt}
-                src={project.image}
-                top
-                width="100%"
-              />
-            </div>
-            <CardBody>
-              <CardTitle tag="h5">
-                {englishMode ? project.spTitle : project.enTitle}
-              </CardTitle>
-              <CardText>
-                <small className="text-muted">
-                  {project.technologies.trim().split(/\s+/).join(" | ")}
-                </small>
-              </CardText>
-              <CardText>
-                {englishMode ? project.spDescription : project.enDescription}
-              </CardText>
-              <CardText>
-                <small className="text-muted">{project.date}</small>
-              </CardText>
-            </CardBody>
-          </Card>
-        ))}
-      </Col>
-    </Row>
+    <Card
+      key={name}
+      className={`col-12 col-lg-5 my-4 mx-2 project-box ${customClass}`}
+      style={darkMode ? { color: `${dark}` } : {}}
+    >
+      <div className="image-container">
+        <CardImg tag="img" alt={enAlt} src={image} top width="100%" />
+      </div>
+      <CardBody>
+        <CardTitle tag="h5">{englishMode ? spTitle : enTitle}</CardTitle>
+        <CardText>
+          <small className="text-muted">
+            {technologies.trim().split(/\s+/).join(" | ")}
+          </small>
+        </CardText>
+        <CardText>{englishMode ? spDescription : enDescription}</CardText>
+        <CardText>
+          <small className="text-muted">{date}</small>
+        </CardText>
+        <Link to={page} className="btn btn-primary">
+          <FontAwesomeIcon icon={faLink} />
+        </Link>
+        <Link to={repo} className="btn btn-primary">
+          <FontAwesomeIcon icon={faGithub} />
+        </Link>
+      </CardBody>
+    </Card>
   );
 };
 

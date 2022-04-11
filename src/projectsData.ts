@@ -12,7 +12,10 @@ const projects = [
       featured: "true",
       type: "fullstack",
       technologies: 'ReactJs MongoDB NodeJs Express',
-      all: 'true'
+      all: 'true',
+      customClass: 'full-visible',
+      pageLink: "",
+      gitHub: ""
       },
       {
       name: "hope-for-the-nations",
@@ -27,7 +30,10 @@ const projects = [
       featured: "true",
       type: "frontend",
       technologies: 'HTML CSS Reactstrap ReactJs',
-      all: 'true'
+      all: 'true',
+      customClass: 'front-visible',
+      pageLink: "",
+      gitHub: ""
       },
       {
       name: "serving-in-christ",
@@ -42,7 +48,10 @@ const projects = [
       featured: "true",
       type: "cms",
       technologies: 'HTML CSS WordPress Divi',
-      all: 'true'
+      all: 'true',
+      customClass: 'cms-visible',
+      pageLink: "",
+      gitHub: ""
       },
       {
       name: "war-game",
@@ -57,7 +66,10 @@ const projects = [
       featured: "true",
       type: "frontend",
       technologies: 'HTML CSS Reactstrap ReactJs',
-      all: 'true'
+      all: 'true',
+      customClass: 'front-visible',
+      pageLink: "",
+      gitHub: ""
       },
       {
       name: "language-game",
@@ -72,7 +84,10 @@ const projects = [
       featured: "true",
       type: "frontend",
       technologies: 'HTML CSS Reactstrap ReactJs',
-      all: 'true'
+      all: 'true',
+      customClass: 'front-visible',
+      pageLink: "",
+      gitHub: ""
       },
       {
       name: "law-firm",
@@ -87,7 +102,10 @@ const projects = [
       featured: "true",
       type: "frontend",
       technologies: 'HTML CSS Reactstrap ReactJs',
-      all: 'true'
+      all: 'true',
+      customClass: 'front-visible',
+      pageLink: "",
+      gitHub: ""
       },
       
 ];
