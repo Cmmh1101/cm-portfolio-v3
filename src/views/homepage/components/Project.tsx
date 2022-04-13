@@ -49,7 +49,11 @@ const Project = ({
     <Card
       key={name}
       className={`col-12 col-lg-5 my-4 mx-2 project-box ${customClass}`}
-      style={darkMode ? { color: `${dark}` } : {}}
+      style={
+        darkMode
+          ? { backgroundColor: `${light}`, color: `${dark}` }
+          : { color: `${light}`, backgroundColor: `${dark}` }
+      }
     >
       <div className="image-container">
         <CardImg tag="img" alt={enAlt} src={image} top width="100%" />

@@ -1,15 +1,5 @@
 import React, { useState } from "react";
-import {
-  ButtonGroup,
-  Button,
-  Row,
-  Col,
-  Card,
-  CardImg,
-  CardBody,
-  CardTitle,
-  CardText,
-} from "reactstrap";
+import { ButtonGroup, Button, Row, Col } from "reactstrap";
 import projectsData from "../../../projectsData";
 import { useTheme } from "../../../provider/ThemeModeProvider";
 import Project from "./Project";
@@ -30,8 +20,6 @@ export interface Project {
 }
 
 const ProjectsList = () => {
-  const { englishMode, darkMode, dark } = useTheme();
-
   const front = projectsData
     .filter((p) => p.type === "frontend")
     .map((p) => {
