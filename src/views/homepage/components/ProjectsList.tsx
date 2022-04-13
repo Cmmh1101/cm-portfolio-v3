@@ -123,7 +123,7 @@ const ProjectsList = () => {
   };
 
   return (
-    <div>
+    <div className="my-5">
       <ButtonGroup className="col-12 button-group">
         <Button onClick={() => handleAllButton()}>All</Button>
         <Button onClick={() => handleFrontButton()}>Front End</Button>
@@ -133,7 +133,7 @@ const ProjectsList = () => {
       <Row>
         <Col
           xs={12}
-          className="d-flex flex-wrap justify-content-evenly align-items-center"
+          className="d-flex flex-wrap justify-content-evenly align-items-center mt-5"
         >
           {filteredProjects}
         </Col>

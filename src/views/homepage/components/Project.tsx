@@ -48,7 +48,7 @@ const Project = ({
   return (
     <Card
       key={name}
-      className={`col-12 col-lg-5 my-4 mx-2 project-box ${customClass}`}
+      className={`col-12 col-lg-5 my-4 mx-2 project-box shadow ${customClass}`}
       style={
         darkMode
           ? { backgroundColor: `${light}`, color: `${dark}` }
@@ -58,7 +58,7 @@ const Project = ({
       <div className="image-container">
         <CardImg tag="img" alt={enAlt} src={image} top width="100%" />
       </div>
-      <CardBody>
+      <CardBody className="py-4">
         <CardTitle tag="h5">{englishMode ? spTitle : enTitle}</CardTitle>
         <CardText>
           <small className="text-muted">
@@ -69,12 +69,14 @@ const Project = ({
         <CardText>
           <small className="text-muted">{date}</small>
         </CardText>
-        <Link to={page} className="btn btn-primary">
-          <FontAwesomeIcon icon={faLink} />
-        </Link>
-        <Link to={repo} className="btn btn-primary">
-          <FontAwesomeIcon icon={faGithub} />
-        </Link>
+        <Col xs={12} className="d-flex justify-content-center">
+          <Link to={page} className="btn btn-primary mx-2">
+            <FontAwesomeIcon icon={faLink} />
+          </Link>
+          <Link to={repo} className="btn btn-primary mx-2">
+            <FontAwesomeIcon icon={faGithub} />
+          </Link>
+        </Col>
       </CardBody>
     </Card>
   );
