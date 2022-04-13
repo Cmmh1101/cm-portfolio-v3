@@ -125,7 +125,16 @@ const ProjectsList = () => {
   return (
     <div className="my-5">
       <ButtonGroup className="col-12 button-group">
-        <Button onClick={() => handleAllButton()}>All</Button>
+        <Button
+          style={
+            filteredProjects === all
+              ? { backgroundColor: "#fbfbfe", color: "#196eff" }
+              : {}
+          }
+          onClick={() => handleAllButton()}
+        >
+          All
+        </Button>
         <Button onClick={() => handleFrontButton()}>Front End</Button>
         <Button onClick={() => handleFullButton()}>Full Stack</Button>
         <Button onClick={() => handleCmsButton()}>CMS</Button>

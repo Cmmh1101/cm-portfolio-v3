@@ -11,7 +11,7 @@ interface Props {
 const SubHeader = ({ enText, enTitle, spTitle, spText }: Props) => {
   const { englishMode } = useTheme();
   return (
-    <div className="sub-header">
+    <div className="sub-header my-5">
       {englishMode ? (
         <>
           <h2>{spTitle}</h2>
