@@ -5,7 +5,6 @@ const projects = [
       enTitle: "My Blog",
       date: "08/04/2021",
       image: "/../../images/projects/react-blog.png",
-      icon: "",
       spDescription: "Mi blog personal es un proyecto full stack, utilizando Reactjs y Typescript para el fronend y nodejs, express y mongodb para el backedn y base de datos",
       enDescription: "Full stack Personal blog project, using Reactjs and Typescript for frontend, and node and mongo for backend and database respertively",
       enAlt: "Project demo",
@@ -14,8 +13,25 @@ const projects = [
       technologies: 'ReactJs MongoDB NodeJs Express',
       all: 'true',
       customClass: 'full-visible',
+      pageLink: "https://blog.carlamontano.tech",
+      gitHub: "https://github.com/Cmmh1101/my-react-blog"
+      },
+      {
+      name: "stats",
+      spTitle: "Estadisticas",
+      enTitle: "Stats",
+      date: "08/04/2021",
+      image: "/../../images/projects/react-blog.png",
+      spDescription: "Pagina de estadisticas escolares Full stack, utilizando ReactJs, ChartJs, NodeJs, Express y MongoDb. Importe un archivo masivo de CSV a MongoDB para usar la data suministrada.",
+      enDescription: "Full stack school stack project, using ReactJs, ChartJs, NodeJs, Express y MongoDb. Imported CSV file to MongoDB to utilize provided data",
+      enAlt: "Project demo",
+      featured: "true",
+      type: "fullstack",
+      technologies: 'ReactJs MongoDB NodeJs Express',
+      all: 'true',
+      customClass: 'full-visible',
       pageLink: "",
-      gitHub: ""
+      gitHub: "https://github.com/Cmmh1101/school-stats"
       },
       {
       name: "hope-for-the-nations",
@@ -23,7 +39,6 @@ const projects = [
       enTitle: "Non-Profit Website",
       date: "08/04/2021",
       image: "/../../images/projects/hope-for-the-nations@2x.png",
-      icon: "",
       spDescription: "Mi blog personal es un proyecto full stack, utilizando Reactjs y Typescript para el fronend y nodejs, express y mongodb para el backedn y base de datos",
       enDescription: "Full stack Personal blog project, using Reactjs and Typescript for frontend, and node and mongo for backend and database respertively",
       enAlt: "Project demo",
@@ -32,8 +47,8 @@ const projects = [
       technologies: 'HTML CSS Reactstrap ReactJs',
       all: 'true',
       customClass: 'front-visible',
-      pageLink: "",
-      gitHub: ""
+      pageLink: "https://hftn7.netlify.app",
+      gitHub: "https://github.com/Cmmh1101/hope-react-types"
       },
       {
       name: "serving-in-christ",
@@ -41,7 +56,6 @@ const projects = [
       enTitle: "Non-Profit Website",
       date: "08/04/2021",
       image: "/../../images/projects/servinginchrist.png",
-      icon: "",
       spDescription: "Mi blog personal es un proyecto full stack, utilizando Reactjs y Typescript para el fronend y nodejs, express y mongodb para el backedn y base de datos",
       enDescription: "Full stack Personal blog project, using Reactjs and Typescript for frontend, and node and mongo for backend and database respertively",
       enAlt: "Non-profit or",
@@ -50,7 +64,7 @@ const projects = [
       technologies: 'HTML CSS WordPress Divi',
       all: 'true',
       customClass: 'cms-visible',
-      pageLink: "",
+      pageLink: "https://www.servinginchrist.org/",
       gitHub: ""
       },
       {
@@ -59,7 +73,6 @@ const projects = [
       enTitle: "Interactive Game",
       date: "08/04/2021",
       image: "/../../images/projects/quadruple-war-game.png",
-      icon: "",
       spDescription: "Mi blog personal es un proyecto full stack, utilizando Reactjs y Typescript para el fronend y nodejs, express y mongodb para el backedn y base de datos",
       enDescription: "Full stack Personal blog project, using Reactjs and Typescript for frontend, and node and mongo for backend and database respertively",
       enAlt: "Project demo",
@@ -68,8 +81,8 @@ const projects = [
       technologies: 'HTML CSS Reactstrap ReactJs',
       all: 'true',
       customClass: 'front-visible',
-      pageLink: "",
-      gitHub: ""
+      pageLink: "https://quadruple-war-game.netlify.app",
+      gitHub: "https://github.com/Cmmh1101/team-war-game"
       },
       {
       name: "language-game",
@@ -77,7 +90,6 @@ const projects = [
       enTitle: "Interactive Language Game",
       date: "08/04/2021",
       image: "/../../images/projects/spanish-english.png",
-      icon: "",
       spDescription: "Mi blog personal es un proyecto full stack, utilizando Reactjs y Typescript para el fronend y nodejs, express y mongodb para el backedn y base de datos",
       enDescription: "Full stack Personal blog project, using Reactjs and Typescript for frontend, and node and mongo for backend and database respertively",
       enAlt: "Project demo",
@@ -86,8 +98,8 @@ const projects = [
       technologies: 'HTML CSS Reactstrap ReactJs',
       all: 'true',
       customClass: 'front-visible',
-      pageLink: "",
-      gitHub: ""
+      pageLink: "https://the-jar-game.netlify.app",
+      gitHub: "https://github.com/Cmmh1101/amanda_carla_will_aug_21"
       },
       {
       name: "law-firm",
@@ -95,7 +107,6 @@ const projects = [
       enTitle: "Law Firm Landing Page",
       date: "08/04/2021",
       image: "/../../images/projects/law-template.png",
-      icon: "",
       spDescription: "Mi blog personal es un proyecto full stack, utilizando Reactjs y Typescript para el fronend y nodejs, express y mongodb para el backedn y base de datos",
       enDescription: "Full stack Personal blog project, using Reactjs and Typescript for frontend, and node and mongo for backend and database respertively",
       enAlt: "Project demo",
@@ -104,8 +115,8 @@ const projects = [
       technologies: 'HTML CSS Reactstrap ReactJs',
       all: 'true',
       customClass: 'front-visible',
-      pageLink: "",
-      gitHub: ""
+      pageLink: "https://law-firm-template.netlify.app",
+      gitHub: "https://github.com/Cmmh1101/lawyer-template"
       },
       
 ];

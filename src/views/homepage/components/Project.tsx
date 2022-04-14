@@ -65,12 +65,17 @@ const Project = ({
         </CardText>
         <CardText>{englishMode ? spDescription : enDescription}</CardText>
         <Col xs={12} className="d-flex justify-content-center">
-          <Link to={page} className="btn btn-primary mx-2">
-            <FontAwesomeIcon icon={faLink} />
-          </Link>
-          <Link to={repo} className="btn btn-primary mx-2">
-            <FontAwesomeIcon icon={faGithub} />
-          </Link>
+          {page !== "" && (
+            <Link to={page} className="btn btn-primary mx-2">
+              <FontAwesomeIcon icon={faLink} />
+            </Link>
+          )}
+
+          {repo !== "" && (
+            <Link to={repo} className="btn btn-primary mx-2">
+              <FontAwesomeIcon icon={faGithub} />
+            </Link>
+          )}
         </Col>
       </CardBody>
     </Card>
