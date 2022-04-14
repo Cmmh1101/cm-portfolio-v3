@@ -24,7 +24,6 @@ interface Props {
   spDescription: string;
   enDescription: string;
   technologies: string;
-  date: string;
   customClass: string;
   page: string;
   repo: string;
@@ -40,7 +39,6 @@ const Project = ({
   enDescription,
   technologies,
   customClass,
-  date,
   page,
   repo,
 }: Props) => {
@@ -48,7 +46,7 @@ const Project = ({
   return (
     <Card
       key={name}
-      className={`col-12 col-lg-5 my-4 mx-2 project-box shadow ${customClass}`}
+      className={`col-12 col-md-8 col-lg-5 my-4 mx-2 project-box shadow ${customClass}`}
       style={
         darkMode
           ? { backgroundColor: `${light}`, color: `${dark}` }
@@ -66,9 +64,6 @@ const Project = ({
           </small>
         </CardText>
         <CardText>{englishMode ? spDescription : enDescription}</CardText>
-        <CardText>
-          <small className="text-muted">{date}</small>
-        </CardText>
         <Col xs={12} className="d-flex justify-content-center">
           <Link to={page} className="btn btn-primary mx-2">
             <FontAwesomeIcon icon={faLink} />

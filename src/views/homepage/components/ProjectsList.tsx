@@ -8,7 +8,6 @@ export interface Project {
   name: string;
   spTitle: string;
   enTitle: string;
-  date: string;
   image: string;
   icon: string;
   spDescription: string;
@@ -34,7 +33,6 @@ const ProjectsList = () => {
           enTitle={p.enTitle}
           spDescription={p.spDescription}
           spTitle={p.spTitle}
-          date={p.date}
           technologies={p.technologies}
           page={p.pageLink}
           repo={p.gitHub}
@@ -55,7 +53,6 @@ const ProjectsList = () => {
           enTitle={p.enTitle}
           spDescription={p.spDescription}
           spTitle={p.spTitle}
-          date={p.date}
           technologies={p.technologies}
           page={p.pageLink}
           repo={p.gitHub}
@@ -76,7 +73,6 @@ const ProjectsList = () => {
           enTitle={p.enTitle}
           spDescription={p.spDescription}
           spTitle={p.spTitle}
-          date={p.date}
           technologies={p.technologies}
           page={p.pageLink}
           repo={p.gitHub}
@@ -95,7 +91,6 @@ const ProjectsList = () => {
         enTitle={p.enTitle}
         spDescription={p.spDescription}
         spTitle={p.spTitle}
-        date={p.date}
         technologies={p.technologies}
         page={p.pageLink}
         repo={p.gitHub}
