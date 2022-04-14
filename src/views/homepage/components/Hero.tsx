@@ -2,11 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Col, Container, Row } from "reactstrap";
 import HeroHeader from "../../../utils/HeroHeader";
-import {
-  faLinkedin,
-  faGithub,
-  faGithubSquare,
-} from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 
 const Hero = () => {

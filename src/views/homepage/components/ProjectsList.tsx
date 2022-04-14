@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { ButtonGroup, Button, Row, Col } from "reactstrap";
 import projectsData from "../../../projectsData";
-import { useTheme } from "../../../provider/ThemeModeProvider";
 import Project from "./Project";
 
 export interface Project {
