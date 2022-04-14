@@ -1,5 +1,6 @@
 import React from "react";
 import { useTheme } from "../../provider/ThemeModeProvider";
+import About from "./components/About";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 
@@ -9,6 +10,7 @@ const HomePage = () => {
     <>
       <Hero />
       <Projects />
+      <About />
     </>
   );
 };
