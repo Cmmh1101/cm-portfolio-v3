@@ -2,17 +2,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { Link } from "react-router-dom";
-import {
-  Card,
-  CardImg,
-  CardBody,
-  CardTitle,
-  CardText,
-  Col,
-  Row,
-  Button,
-} from "reactstrap";
+import { Card, CardImg, CardBody, CardTitle, CardText, Col } from "reactstrap";
 import { useTheme } from "../../../provider/ThemeModeProvider";
 
 interface Props {
@@ -66,15 +56,15 @@ const Project = ({
         <CardText>{englishMode ? spDescription : enDescription}</CardText>
         <Col xs={12} className="d-flex justify-content-center">
           {page !== "" && (
-            <Link to={page} className="btn btn-primary mx-2">
+            <a href={page} target="_blank" className="btn btn-primary mx-2">
               <FontAwesomeIcon icon={faLink} />
-            </Link>
+            </a>
           )}
 
           {repo !== "" && (
-            <Link to={repo} className="btn btn-primary mx-2">
+            <a href={repo} target="_blank" className="btn btn-primary mx-2">
               <FontAwesomeIcon icon={faGithub} />
-            </Link>
+            </a>
           )}
         </Col>
       </CardBody>
