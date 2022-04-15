@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "reactstrap";
 import { useTheme } from "../../../provider/ThemeModeProvider";
 import SubHeader from "../../../utils/SubHeader";
+import SkillsList from "./SkillsList";
 
 const About = () => {
   const { englishMode } = useTheme();
@@ -24,15 +25,17 @@ const About = () => {
         <Row>
           <Col xs={12} className="my-5 projects-section">
             <SubHeader enTitle="About Me" spTitle="Sobre Mi" />
-          </Col>
-          <Col xs={12}>
-            {englishMode
-              ? aboutEsp.map((parragraph, i) => {
-                  return <p key={i}>{parragraph}</p>;
-                })
-              : aboutEn.map((parragraph, i) => {
-                  return <p key={i}>{parragraph}</p>;
-                })}
+            <Col xs={12}>
+              {englishMode
+                ? aboutEsp.map((parragraph, i) => {
+                    return <p key={i}>{parragraph}</p>;
+                  })
+                : aboutEn.map((parragraph, i) => {
+                    return <p key={i}>{parragraph}</p>;
+                  })}
+            </Col>
+            <SubHeader subEnglish="Skills" subSpanish="Habilidades" />
+            <SkillsList />
           </Col>
         </Row>
       </Container>
