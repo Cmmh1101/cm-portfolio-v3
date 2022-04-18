@@ -40,3 +40,23 @@ nav {
   width: 22px;
   height: 22px;
 }
+
+footer {
+  background-color: $dark;
+  color: $light;
+  border-top: 2px solid $dark-gray;
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    a,
+    .links {
+      color: $light;
+      text-decoration: none;
+      &:hover {
+        color: $light-blue;
+      }
+    }
+  }
+}
