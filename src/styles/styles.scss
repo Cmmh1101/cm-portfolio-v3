@@ -125,7 +125,7 @@ $transition: all 0.3s ease-in-out;
     flex-direction: column;
     &:hover img {
       transform: translateY(0);
-      filter: drop-shadow(0 0 0.3rem $light-blue);
+      filter: drop-shadow(0 0 0.3rem #72b1ec);
     }
     figcaption {
       opacity: 0;
@@ -195,5 +195,16 @@ $transition: all 0.3s ease-in-out;
   }
   100% {
     opacity: 1;
+  }
+}
+
+//  Experience
+
+.experience-box {
+  border-left: 5px solid $light-blue;
+  padding: 0 24px;
+  position: relative;
+  span {
+    color: gray;
   }
 }

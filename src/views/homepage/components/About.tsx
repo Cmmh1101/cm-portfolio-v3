@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "reactstrap";
 import { useTheme } from "../../../provider/ThemeModeProvider";
 import SubHeader from "../../../utils/SubHeader";
+import Experience from "./Experience";
 import SkillsList from "./SkillsList";
 
 const About = () => {
@@ -36,6 +37,7 @@ const About = () => {
             </Col>
             <SubHeader subEnglish="Skills" subSpanish="Habilidades" />
             <SkillsList />
+            <Experience />
           </Col>
         </Row>
       </Container>
