@@ -2,7 +2,7 @@ const skills = [
       {
       name: "html",
       title: "HTML",
-      path: "public/images/skills/cib-html5.svg",
+      path: "../images/skills/cib-html5.svg",
       type: "dev"
       },
       {
