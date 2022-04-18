@@ -85,7 +85,7 @@ const skills = [
       },
       {
       name: "vsc",
-      title: "Visual Studio Code",
+      title: "VSC",
       path: "../images/skills/cib-visual-studio-code.svg",
       type: "dev"
       },
