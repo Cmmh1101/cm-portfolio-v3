@@ -1,126 +1,199 @@
-const projects = [
-      {
-      name: "git",
-      title: "Git",
-      pageLink: "../images/skills/cib-git.svg",
-      type: "git"
-      },
-      {
-      name: "gitkraken",
-      title: "Gitkraken",
-      pageLink: "public/images/skills/cib-gitkraken.svg",
-      type: "git"
-      },
-      {
-      name: "github",
-      title: "Github",
-      pageLink: "../images/skills/cib-github.svg",
-      type: "git"
-      },
-      {
-      name: "bitbucket",
-      title: "Bitbucket",
-      pageLink: "../images/skills/cib-bitbucket.svg",
-      type: "git"
-      },
-      {
-      name: "gitlab",
-      title: "Gitlab",
-      pageLink: "../images/skills/cib-gitlab.svg",
-      type: "git"
-      },
-      {
-      name: "aws",
-      title: "AWS",
-      pageLink: "../images/skills/cib-amazon-aws.svg",
-      type: "dev"
-      },
-      
-      {
-      name: "css",
-      title: "CSS",
-      pageLink: "../images/skills/cib-css3.svg",
-      type: "dev"
-      },
+const skills = [
       {
       name: "html",
       title: "HTML",
-      pageLink: "public/images/skills/cib-html5.svg",
+      path: "public/images/skills/cib-html5.svg",
+      type: "dev"
+      },
+      {
+      name: "css",
+      title: "CSS",
+      path: "../images/skills/cib-css3.svg",
+      type: "dev"
+      },
+      {
+      name: "bootstrap",
+      title: "Boostrap",
+      path: "../images/skills/cib-bootstrap.svg",
+      type: "dev"
+      },
+      {
+      name: "sass",
+      title: "Sass",
+      path: "../images/skills/cib-sass.svg",
       type: "dev"
       },
       {
       name: "javascript",
       title: "JavaScript",
-      pageLink: "../images/skills/cib-js.svg",
+      path: "../images/skills/cib-js.svg",
+      type: "dev"
+      },
+      {
+      name: "typescript",
+      title: "TypeScript",
+      path: "../images/skills/cib-typescript.svg",
       type: "dev"
       },
       {
       name: "react",
       title: "ReactJs",
-      pageLink: "../images/skills/cib-react.svg",
+      path: "../images/skills/cib-react.svg",
       type: "dev"
       },
       {
       name: "jestjs",
       title: "JestJs",
-      pageLink: "../images/skills/cib-jest.svg",
+      path: "../images/skills/cib-jest.svg",
+      type: "dev"
+      },
+      {
+      name: "redux",
+      title: "Redux",
+      path: "../images/skills/cib-redux.svg",
       type: "dev"
       },
       {
       name: "mongo",
       title: "MongoDB",
-      pageLink: "../images/skills/cib-mongodb.svg",
-      type: "dev"
-      },
-      {
-      name: "netlify",
-      title: "Netlify",
-      pageLink: "../images/skills/cib-netlify.svg",
+      path: "../images/skills/cib-mongodb.svg",
       type: "dev"
       },
       {
       name: "node",
       title: "NodeJs",
-      pageLink: "../images/skills/cib-node-js.svg",
+      path: "../images/skills/cib-node-js.svg",
       type: "dev"
       },
       {
       name: "npm",
       title: "NPM",
-      pageLink: "../images/skills/cib-npm.svg",
+      path: "../images/skills/cib-npm.svg",
       type: "dev"
       },
       {
       name: "postman",
       title: "Postman",
-      pageLink: "../images/skills/cib-postman.svg",
+      path: "../images/skills/cib-postman.svg",
       type: "dev"
       },
       {
       name: "expo",
       title: "Expo",
-      pageLink: "../images/skills/cib-expo.svg",
+      path: "../images/skills/cib-expo.svg",
       type: "dev"
+      },
+      {
+      name: "vsc",
+      title: "Visual Studio Code",
+      path: "../images/skills/cib-visual-studio-code.svg",
+      type: "dev"
+      },
+
+      
+      {
+      name: "aws",
+      title: "AWS",
+      path: "../images/skills/cib-amazon-aws.svg",
+      type: "dev"
+      },
+      {
+      name: "netlify",
+      title: "Netlify",
+      path: "../images/skills/cib-netlify.svg",
+      type: "dev"
+      },
+      {
+      name: "git",
+      title: "Git",
+      path: "../images/skills/cib-git.svg",
+      type: "git"
+      },
+      {
+      name: "gitkraken",
+      title: "Gitkraken",
+      path: "../images/skills/cib-gitkraken.svg",
+      type: "git"
+      },
+      {
+      name: "github",
+      title: "Github",
+      path: "../images/skills/cib-github.svg",
+      type: "git"
+      },
+      {
+      name: "bitbucket",
+      title: "Bitbucket",
+      path: "../images/skills/cib-bitbucket.svg",
+      type: "git"
+      },
+      {
+      name: "gitlab",
+      title: "Gitlab",
+      path: "../images/skills/cib-gitlab.svg",
+      type: "git"
+      },
+      {
+      name: "wordpress",
+      title: "Wordpress",
+      path: "../images/skills/cib-wordpress 2.svg",
+      type: "design"
+      },
+      {
+      name: "shopify",
+      title: "Shopify",
+      path: "../images/skills/cib-shopify.svg",
+      type: "design"
       },
       {
       name: "adobe",
       title: "Adobe XD",
-      pageLink: "../images/skills/cib-adobe-xd.svg",
+      path: "../images/skills/cib-adobe-xd.svg",
       type: "design"
       },
-      
+      {
+      name: "figma",
+      title: "Figma",
+      path: "../images/skills/figma.svg",
+      type: "design"
+      },
       {
       name: "jira",
       title: "Jira",
-      pageLink: "../images/skills/cib-jira.svg",
+      path: "../images/skills/cib-jira.svg",
       type: "manage"
       },
       {
       name: "confluence",
       title: "Confluence",
-      pageLink: "public/images/skills/cib-confluence.svg",
+      path: "../images/skills/cib-confluence.svg",
       type: "manage"
       },
+      {
+      name: "team",
+      title: "Team Work",
+      path: "../images/skills/cil-fork.svg",
+      type: "soft"
+      },
+      {
+      name: "remote",
+      title: "Remote",
+      path: "../images/skills/cil-globe-alt.svg",
+      type: "soft"
+      },
+      {
+      name: "bilingual",
+      title: "Bilingual",
+      path: "../images/skills/cil-language.svg",
+      type: "soft"
+      },
+      {
+      name: "problem",
+      title: "Problem Solving",
+      path: "../images/skills/cil-puzzle.svg",
+      type: "soft"
+      },
+      
 ];
 
-export default projects;
+export default skills;

@@ -106,3 +106,32 @@ $transition: all 0.3s ease-in-out;
     transform: scale(1.05);
   }
 }
+
+//  skills
+.tech-skills {
+  .skill-box {
+    max-width: 80px;
+    max-height: 60px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &:hover img {
+      transform: translateY(-10px);
+      filter: drop-shadow(0 0 0.25rem #72b1ec);
+    }
+    .skills-img {
+      width: 40px;
+      min-width: 40px;
+      height: 40px;
+      min-height: 40px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+.skill-box:hover img {
+  transform: translateY(-10px);
+  filter: drop-shadow(0 0 0.25rem #72b1ec);
+}
