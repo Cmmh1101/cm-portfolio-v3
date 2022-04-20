@@ -26,7 +26,7 @@ const Footer = () => {
             </Link>
           </Col>
           <Col xs={12} className="mt-5 mb-1 small">
-            All right reserved | 2022
+            2022 | All right reserved
           </Col>
         </Row>
       </Container>

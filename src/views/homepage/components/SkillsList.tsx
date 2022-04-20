@@ -4,7 +4,7 @@ import { useTheme } from "../../../provider/ThemeModeProvider";
 import skills from "../../../skillsData";
 
 const SkillsList = () => {
-  const { darkMode, dark, light } = useTheme();
+  const { darkMode, light } = useTheme();
   return (
     <Col xs={12} className="skills-container">
       {skills.map((skill) => {

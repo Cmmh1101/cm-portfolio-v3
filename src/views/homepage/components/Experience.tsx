@@ -9,12 +9,12 @@ interface Props {}
 const Experience = (props: Props) => {
   const { englishMode } = useTheme();
   return (
-    <Row xs={12} className="my-5">
+    <Row xs={12} className="mt-5">
       <SubHeader enTitle="Experience" spTitle="Experiencia" />
       <Col xs={12}>
         {experience.map((exp) => {
           return (
-            <Col className="mb-5 experience-box">
+            <Col key={exp.name} className="mb-5 experience-box">
               <h3>{englishMode ? exp.spTitle : exp.enTitle}</h3>
               <span className="small">
                 {exp.location + " / " + exp.startDate + " - " + exp.endDate}
