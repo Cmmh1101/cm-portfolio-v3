@@ -208,3 +208,32 @@ $transition: all 0.3s ease-in-out;
     color: gray;
   }
 }
+
+//  Connect
+
+.connect {
+  .connect-image-col {
+    display: flex;
+    justify-content: center;
+    .connect-img {
+      width: 250px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .connect-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    a {
+      font-size: 3rem;
+      margin: 15px;
+      padding: 10px;
+      i {
+        font-size: 3rem;
+      }
+    }
+  }
+}

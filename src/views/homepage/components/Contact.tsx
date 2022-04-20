@@ -12,9 +12,17 @@ const Contact = () => {
   return (
     <Container>
       <Row xs={12} className="mb-5">
-        <Col xs={12}>
+        <Col xs={12} className="connect">
           <SubHeader spTitle="Conversemos" enTitle="Get in touch" />
-          <Col className="mb-5">
+          <Col xs={12} className="connect-image-col">
+            <div className="connect-img">
+              <img
+                src="../../../images/general/contactImg.png"
+                alt="Cell phono showing social media apps to connect"
+              />
+            </div>
+          </Col>
+          <Col xs={12} className="mb-5 connect-icons">
             <a
               href="https://github.com/cmmh1101"
               target="_blank"
