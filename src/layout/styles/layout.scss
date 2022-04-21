@@ -58,5 +58,14 @@ footer {
         color: $light-blue;
       }
     }
+    .footer-icons {
+      color: $light-blue;
+      font-size: 2rem;
+      margin: 0 10px;
+      padding: 10px;
+      &:hover {
+        color: $mid-blue;
+      }
+    }
   }
 }
