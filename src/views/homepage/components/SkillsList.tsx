@@ -9,9 +9,8 @@ const SkillsList = () => {
     <Col xs={12} className="skills-container">
       {skills.map((skill) => {
         return (
-          <div className="skill-div">
+          <div key={skill.name} className="skill-div">
             <div
-              key={skill.name}
               className="skill-box"
               style={
                 darkMode
