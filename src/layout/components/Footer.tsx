@@ -7,8 +7,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
+import { useTheme } from "../../provider/ThemeModeProvider";
 
 const Footer = () => {
+  const { englishMode } = useTheme();
+
   return (
     <footer className="pt-5 shadow">
       <Container>
@@ -22,22 +25,23 @@ const Footer = () => {
           </Col>
           <Col xs={12} md={4} className="d-flex flex-column">
             <Link to="/" className="links">
-              Home
+              {englishMode ? "Inicio" : "Home"}
             </Link>
             <Link to="/" className="links">
-              Projects
+              {englishMode ? "Projectos" : "Projects"}
             </Link>
           </Col>
           <Col xs={12} md={4} className="d-flex flex-column">
             <Link to="/" className="links">
-              About
+              {englishMode ? "Sobre Mi" : "About"}
             </Link>
+
             <Link to="/" className="links">
               Blog
             </Link>
           </Col>
           <Col xs={12} md={4} className="">
-            <h5>Let's Connect</h5>
+            <h5>{englishMode ? "Conversemos" : "Let's Connect"} </h5>
             <a
               href="https://github.com/cmmh1101"
               target="_blank"
