@@ -9,10 +9,12 @@ import {
   NavbarToggler,
   NavItem,
 } from "reactstrap";
+import { useTheme } from "../../provider/ThemeModeProvider";
 import ToggleLangButton from "./ToggleLangButton";
 import ToggleModeButton from "./ToggleModeButton";
 
 const TopNavigation = () => {
+  const { englishMode } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -35,11 +37,23 @@ const TopNavigation = () => {
               <ToggleLangButton />
             </NavItem>
             <NavItem className="my-2 my-md-0">
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/" className="links">
+                {englishMode ? "Inicio" : "Home"}
+              </NavLink>
             </NavItem>
             <NavItem className="my-2 my-md-0">
-              <NavLink to="https://github.com/reactstrap/reactstrap">
-                GitHub
+              <NavLink to="/" className="links">
+                {englishMode ? "Proyectos" : "Projects"}
+              </NavLink>
+            </NavItem>
+            <NavItem className="my-2 my-md-0">
+              <NavLink to="/" className="links">
+                {englishMode ? "Sobre Mi" : "About"}
+              </NavLink>
+            </NavItem>
+            <NavItem className="my-2 my-md-0">
+              <NavLink to="/" className="links">
+                {englishMode ? "Contacto" : "Contact"}
               </NavLink>
             </NavItem>
           </Nav>
