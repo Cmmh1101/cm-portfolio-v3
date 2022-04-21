@@ -13,27 +13,38 @@ const Footer = () => {
     <footer className="pt-5 shadow">
       <Container>
         <Row className="footer">
-          <Col xs={12} md={4}>
-            <h5>Projects</h5>
+          <Col xs={12} className="d-flex justify-content-center mb-5">
+            <Col md={12} className="footer-logo">
+              <Link to="/">
+                <img src="../logobrand.png" alt="Logo Carla Montano" />
+              </Link>
+            </Col>
+          </Col>
+          <Col xs={12} md={4} className="d-flex flex-column">
             <Link to="/" className="links">
-              Link
+              Home
+            </Link>
+            <Link to="/" className="links">
+              Projects
             </Link>
           </Col>
-          <Col xs={12} md={4}>
-            <h5>About</h5>
+          <Col xs={12} md={4} className="d-flex flex-column">
             <Link to="/" className="links">
-              Link
+              About
+            </Link>
+            <Link to="/" className="links">
+              Blog
             </Link>
           </Col>
           <Col xs={12} md={4} className="">
-            <h5>Connect</h5>
+            <h5>Let's Connect</h5>
             <a
               href="https://github.com/cmmh1101"
               target="_blank"
               rel="noreferrer"
               className="footer-icons"
             >
-              <FontAwesomeIcon icon={faGithub} />
+              <FontAwesomeIcon icon={faGithub} className="icon" />
             </a>
             <a
               href="https://www.linkedin.com/in/carla-montano"
@@ -41,7 +52,7 @@ const Footer = () => {
               rel="noreferrer"
               className="footer-icons"
             >
-              <FontAwesomeIcon icon={faLinkedin} />
+              <FontAwesomeIcon icon={faLinkedin} className="icon" />
             </a>
             <a
               href="https://twitter.com/cmmh11"
@@ -49,11 +60,11 @@ const Footer = () => {
               rel="noreferrer"
               className="footer-icons"
             >
-              <FontAwesomeIcon icon={faTwitter} />
+              <FontAwesomeIcon icon={faTwitter} className="icon" />
             </a>
           </Col>
           <Col xs={12} className="mt-5 mb-1 small">
-            2022 | All right reserved
+            <span>2022 | All right reserved</span>
           </Col>
         </Row>
       </Container>

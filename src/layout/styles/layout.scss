@@ -54,18 +54,35 @@ footer {
     .links {
       color: $light;
       text-decoration: none;
+      padding: 10px 0;
       &:hover {
         color: $light-blue;
       }
     }
     .footer-icons {
-      color: $light-blue;
       font-size: 2rem;
-      margin: 0 10px;
+      margin: 10px;
       padding: 10px;
-      &:hover {
-        color: $mid-blue;
+      transition: $transition;
+      .icon {
+        transition: $transition;
       }
+      &:hover .icon {
+        color: $light-blue;
+        transform: scale(1.1);
+      }
+    }
+    .footer-logo {
+      width: 300px;
+      img {
+        width: 100%;
+      }
+    }
+    h5 {
+      margin-bottom: 20px;
+    }
+    span {
+      color: gray;
     }
   }
 }

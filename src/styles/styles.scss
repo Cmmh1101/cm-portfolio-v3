@@ -232,15 +232,10 @@ $transition: all 0.3s ease-in-out;
       margin: 15px;
       padding: 10px;
       color: $light-blue;
+      transition: $transition;
       &:hover {
         color: $mid-blue;
-      }
-      i {
-        font-size: 3rem;
-        color: $light-blue;
-        &:hover {
-          color: $mid-blue;
-        }
+        transform: scale(1.1);
       }
     }
   }
