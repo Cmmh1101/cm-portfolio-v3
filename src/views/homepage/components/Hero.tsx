@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <Container tag="header" fluid className="hero-container">
+    <Container id="home" tag="header" fluid className="hero-container">
       <Row>
         <Col
           xs={2}

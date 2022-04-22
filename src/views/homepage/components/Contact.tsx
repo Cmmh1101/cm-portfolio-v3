@@ -10,7 +10,7 @@ import SubHeader from "../../../utils/SubHeader";
 
 const Contact = () => {
   return (
-    <Container>
+    <Container id="contact">
       <Row xs={12} className="pb-5">
         <Col xs={12} className="connect">
           <SubHeader spTitle="Conversemos" enTitle="Get in touch" />

@@ -17,6 +17,11 @@ const TopNavigation = () => {
   const { englishMode } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
 
+  const scrollTo = (section: string) => {
+    const anchor = document.querySelector(`${section}`);
+    anchor?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   const toggle = () => {
     setIsOpen(!isOpen);
   };
@@ -37,24 +42,33 @@ const TopNavigation = () => {
               <ToggleLangButton />
             </NavItem>
             <NavItem className="my-2 my-md-0">
-              <NavLink to="/" className="links">
+              <NavLink
+                to="/"
+                onClick={() => scrollTo("#home")}
+                className="links"
+              >
                 {englishMode ? "Inicio" : "Home"}
               </NavLink>
             </NavItem>
             <NavItem className="my-2 my-md-0">
-              <NavLink to="/" className="links">
+              <a
+                onClick={() => {
+                  scrollTo("#projects");
+                }}
+                className="links"
+              >
                 {englishMode ? "Proyectos" : "Projects"}
-              </NavLink>
+              </a>
             </NavItem>
             <NavItem className="my-2 my-md-0">
-              <NavLink to="/" className="links">
+              <a onClick={() => scrollTo("#about")} className="links">
                 {englishMode ? "Sobre Mi" : "About"}
-              </NavLink>
+              </a>
             </NavItem>
             <NavItem className="my-2 my-md-0">
-              <NavLink to="/" className="links">
+              <a onClick={() => scrollTo("#contact")} className="links">
                 {englishMode ? "Contacto" : "Contact"}
-              </NavLink>
+              </a>
             </NavItem>
           </Nav>
         </Collapse>

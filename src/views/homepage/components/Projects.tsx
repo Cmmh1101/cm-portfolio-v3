@@ -6,7 +6,7 @@ import ProjectsList from "./ProjectsList";
 
 const Projects = () => {
   return (
-    <Container>
+    <Container id="projects">
       <Row>
         <Col xs={12} className="my-5 projects-section">
           <SubHeader enTitle="Projects" spTitle="Projectos" />
