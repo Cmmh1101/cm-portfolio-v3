@@ -1,5 +1,4 @@
 import React from "react";
-import { animated } from "react-spring";
 import { Col, Container, Row } from "reactstrap";
 import SubHeader from "../../../utils/SubHeader";
 import ProjectsList from "./ProjectsList";

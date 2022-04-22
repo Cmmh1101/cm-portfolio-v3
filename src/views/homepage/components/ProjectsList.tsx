@@ -4,20 +4,6 @@ import projectsData from "../../../projectsData";
 import Project from "./Project";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
-export interface Project {
-  name: string;
-  spTitle: string;
-  enTitle: string;
-  image: string;
-  icon: string;
-  spDescription: string;
-  enDescription: string;
-  enAlt: string;
-  featured: string;
-  type: string;
-  technologies: string;
-}
-
 const ProjectsList = () => {
   const front = projectsData
     .filter((p) => p.type === "frontend")

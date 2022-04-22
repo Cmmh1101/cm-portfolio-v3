@@ -24,7 +24,7 @@ const TopNavigation = () => {
   return (
     <nav>
       <Navbar fixed="top" expand="md" dark className="navigation shadow">
-        <NavbarBrand href="/" className="logo-container">
+        <NavbarBrand href="#home" className="logo-container">
           <img src="../../../logobrand.png" alt="Logo" />
         </NavbarBrand>
         <NavbarToggler className="me-2" onClick={toggle} />
@@ -49,28 +49,26 @@ const TopNavigation = () => {
               </NavLink>
             </NavItem>
             <NavItem className="my-2 my-md-0">
-              <a
+              <button
                 onClick={() => {
                   scrollTo("#projects");
                   isOpen && toggle();
                 }}
-                rel="noreferrer"
                 className="links"
               >
                 {englishMode ? "Proyectos" : "Projects"}
-              </a>
+              </button>
             </NavItem>
             <NavItem className="my-2 my-md-0">
-              <a
+              <button
                 onClick={() => {
                   scrollTo("#about");
                   isOpen && toggle();
                 }}
-                rel="noreferrer"
                 className="links"
               >
                 {englishMode ? "Sobre Mi" : "About"}
-              </a>
+              </button>
             </NavItem>
             <NavItem className="my-2 my-md-0">
               <a
@@ -86,16 +84,15 @@ const TopNavigation = () => {
               </a>
             </NavItem>
             <NavItem className="my-2 my-md-0">
-              <a
+              <button
                 onClick={() => {
                   scrollTo("#contact");
                   isOpen && toggle();
                 }}
-                rel="noreferrer"
                 className="links"
               >
                 {englishMode ? "Contacto" : "Contact"}
-              </a>
+              </button>
             </NavItem>
           </Nav>
         </Collapse>

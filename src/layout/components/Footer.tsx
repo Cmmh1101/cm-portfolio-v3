@@ -34,19 +34,19 @@ const Footer = () => {
             >
               {englishMode ? "Inicio" : "Home"}
             </Link>
-            <a
+            <button
               onClick={() => {
                 scrollTo("#projects");
               }}
               className="links"
             >
               {englishMode ? "Proyectos" : "Projects"}
-            </a>
+            </button>
           </Col>
           <Col xs={12} md={4} className="d-flex flex-column">
-            <a onClick={() => scrollTo("#about")} className="links">
+            <button onClick={() => scrollTo("#about")} className="links">
               {englishMode ? "Sobre Mi" : "About"}
-            </a>
+            </button>
 
             <a
               href="https://blog.carlamontano.tech"
