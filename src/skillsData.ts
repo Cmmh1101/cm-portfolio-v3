@@ -140,18 +140,6 @@ const skills = [
       type: "design"
       },
       {
-      name: "shopify",
-      title: "Shopify",
-      path: "../images/skills/cib-shopify.svg",
-      type: "design"
-      },
-      {
-      name: "adobe",
-      title: "Adobe XD",
-      path: "../images/skills/cib-adobe-xd.svg",
-      type: "design"
-      },
-      {
       name: "figma",
       title: "Figma",
       path: "../images/skills/figma.svg",

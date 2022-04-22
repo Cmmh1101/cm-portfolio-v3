@@ -9,15 +9,13 @@ const ToggleLangButton = () => {
       style={
         englishMode
           ? {
-              backgroundImage:
-                "url(" + "../../../images/general/usaflag.png" + ")",
+              backgroundImage: "url(../../../images/general/usaflag.png)",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
             }
           : {
-              backgroundImage:
-                "url(" + "../../../images/general/espFlag.png" + ")",
+              backgroundImage: "url(../../../images/general/espFlag.png)",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
