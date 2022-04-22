@@ -1,4 +1,5 @@
 import React from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import { useTheme } from "../provider/ThemeModeProvider";
 
 interface Props {
@@ -20,21 +21,23 @@ const SubHeader = ({
 }: Props) => {
   const { englishMode } = useTheme();
   return (
-    <div className="sub-header my-5">
-      {englishMode ? (
-        <>
-          <h2>{spTitle}</h2>
-          <h3>{subSpanish}</h3>
-          <p>{spText}</p>
-        </>
-      ) : (
-        <>
-          <h2>{enTitle}</h2>
-          <h3>{subEnglish}</h3>
-          <p>{enText}</p>
-        </>
-      )}
-    </div>
+    <AnimationOnScroll animateIn="animate__fadeInLeft">
+      <div className="sub-header my-5">
+        {englishMode ? (
+          <>
+            <h2>{spTitle}</h2>
+            <h3>{subSpanish}</h3>
+            <p>{spText}</p>
+          </>
+        ) : (
+          <>
+            <h2>{enTitle}</h2>
+            <h3>{subEnglish}</h3>
+            <p>{enText}</p>
+          </>
+        )}
+      </div>
+    </AnimationOnScroll>
   );
 };
 

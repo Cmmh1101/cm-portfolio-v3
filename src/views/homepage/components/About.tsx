@@ -1,4 +1,5 @@
 import React from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import { Col, Container, Row } from "reactstrap";
 import { useTheme } from "../../../provider/ThemeModeProvider";
 import SubHeader from "../../../utils/SubHeader";
@@ -26,15 +27,34 @@ const About = () => {
         <Row>
           <Col xs={12} className="my-5 projects-section">
             <SubHeader enTitle="About Me" spTitle="Sobre Mi" />
-            <Col xs={12}>
-              {englishMode
-                ? aboutEsp.map((parragraph, i) => {
-                    return <p key={i}>{parragraph}</p>;
-                  })
-                : aboutEn.map((parragraph, i) => {
-                    return <p key={i}>{parragraph}</p>;
-                  })}
+
+            <Col
+              xs={12}
+              className="d-flex justify-content-center align-items-center flex-wrap"
+            >
+              <Col xs={12} md={6}>
+                <AnimationOnScroll animateIn="animate__fadeIn animate__delay-1s pr-5">
+                  {englishMode
+                    ? aboutEsp.map((parragraph, i) => {
+                        return <p key={i}>{parragraph}</p>;
+                      })
+                    : aboutEn.map((parragraph, i) => {
+                        return <p key={i}>{parragraph}</p>;
+                      })}
+                </AnimationOnScroll>
+              </Col>
+
+              <Col xs={12} md={6} className="px-5">
+                <AnimationOnScroll animateIn="animate__fadeIn animate__delay-1s">
+                  <img
+                    className="w-100"
+                    src="../images/general/computer.jpg"
+                    alt="logo"
+                  />
+                </AnimationOnScroll>
+              </Col>
             </Col>
+
             <SubHeader subEnglish="Skills" subSpanish="Habilidades" />
             <SkillsList />
             <Experience />

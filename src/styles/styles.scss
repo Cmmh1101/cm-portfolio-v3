@@ -212,6 +212,12 @@ $transition: all 0.3s ease-in-out;
 
 //  Connect
 
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .connect {
   .connect-image-col {
     display: flex;

@@ -26,11 +26,9 @@ const ThemeModeProvider = (props: { children: ReactNode }) => {
 
   const styles = useSpring({
     from: {
-      transform: "translateX(-800px)",
       opacity: 0,
     },
     to: {
-      transform: "translateX(0)",
       opacity: 1,
     },
     delay: 1200,

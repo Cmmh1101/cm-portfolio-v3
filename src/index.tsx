@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "@fontsource/poppins";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import "bootstrap/dist/css/bootstrap.css";
+import "animate.css/animate.min.css";
 import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";

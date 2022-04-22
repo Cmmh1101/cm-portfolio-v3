@@ -54,6 +54,7 @@ const TopNavigation = () => {
                   scrollTo("#projects");
                   isOpen && toggle();
                 }}
+                rel="noreferrer"
                 className="links"
               >
                 {englishMode ? "Proyectos" : "Projects"}
@@ -65,6 +66,7 @@ const TopNavigation = () => {
                   scrollTo("#about");
                   isOpen && toggle();
                 }}
+                rel="noreferrer"
                 className="links"
               >
                 {englishMode ? "Sobre Mi" : "About"}
@@ -77,6 +79,7 @@ const TopNavigation = () => {
                 onClick={() => {
                   isOpen && toggle();
                 }}
+                rel="noreferrer"
                 className="links"
               >
                 Blog
@@ -88,6 +91,7 @@ const TopNavigation = () => {
                   scrollTo("#contact");
                   isOpen && toggle();
                 }}
+                rel="noreferrer"
                 className="links"
               >
                 {englishMode ? "Contacto" : "Contact"}

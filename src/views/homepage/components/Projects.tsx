@@ -1,4 +1,5 @@
 import React from "react";
+import { animated } from "react-spring";
 import { Col, Container, Row } from "reactstrap";
 import SubHeader from "../../../utils/SubHeader";
 import ProjectsList from "./ProjectsList";
@@ -6,7 +7,7 @@ import ProjectsList from "./ProjectsList";
 const Projects = () => {
   return (
     <Container id="projects">
-      <Row>
+      <Row className="row">
         <Col xs={12} className="my-5 projects-section">
           <SubHeader enTitle="Projects" spTitle="Projectos" />
           <ProjectsList />

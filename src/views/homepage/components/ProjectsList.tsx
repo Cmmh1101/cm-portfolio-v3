@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ButtonGroup, Button, Row, Col } from "reactstrap";
 import projectsData from "../../../projectsData";
 import Project from "./Project";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export interface Project {
   name: string;
@@ -118,28 +119,33 @@ const ProjectsList = () => {
 
   return (
     <div className="my-5">
-      <ButtonGroup className="col-12 button-group">
-        <Button
-          style={
-            filteredProjects === all
-              ? { backgroundColor: "#fbfbfe", color: "#196eff" }
-              : {}
-          }
-          onClick={() => handleAllButton()}
-        >
-          All
-        </Button>
-        <Button onClick={() => handleFrontButton()}>Front End</Button>
-        <Button onClick={() => handleFullButton()}>Full Stack</Button>
-        <Button onClick={() => handleCmsButton()}>CMS</Button>
-      </ButtonGroup>
+      <AnimationOnScroll animateIn="animate__fadeInLeft">
+        <ButtonGroup className="col-12 button-group">
+          <Button
+            style={
+              filteredProjects === all
+                ? { backgroundColor: "#fbfbfe", color: "#196eff" }
+                : {}
+            }
+            onClick={() => handleAllButton()}
+          >
+            All
+          </Button>
+          <Button onClick={() => handleFrontButton()}>Front End</Button>
+          <Button onClick={() => handleFullButton()}>Full Stack</Button>
+          <Button onClick={() => handleCmsButton()}>CMS</Button>
+        </ButtonGroup>
+      </AnimationOnScroll>
+
       <Row>
-        <Col
-          xs={12}
-          className="d-flex flex-wrap justify-content-evenly align-items-center mt-5"
-        >
-          {filteredProjects}
-        </Col>
+        <AnimationOnScroll animateIn="animate__fadeIn animate__delay-1s">
+          <Col
+            xs={12}
+            className="d-flex flex-wrap justify-content-evenly align-items-center mt-5"
+          >
+            {filteredProjects}
+          </Col>
+        </AnimationOnScroll>
       </Row>
     </div>
   );
