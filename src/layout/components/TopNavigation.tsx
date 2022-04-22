@@ -72,6 +72,18 @@ const TopNavigation = () => {
             </NavItem>
             <NavItem className="my-2 my-md-0">
               <a
+                href="https://blog.carlamontano.tech"
+                target="_blank"
+                onClick={() => {
+                  isOpen && toggle();
+                }}
+                className="links"
+              >
+                Blog
+              </a>
+            </NavItem>
+            <NavItem className="my-2 my-md-0">
+              <a
                 onClick={() => {
                   scrollTo("#contact");
                   isOpen && toggle();
