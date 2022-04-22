@@ -54,7 +54,7 @@ const Footer = () => {
               rel="noreferrer"
               className="links"
             >
-              Contact
+              Blog
             </a>
           </Col>
           <Col xs={12} md={4} className="">

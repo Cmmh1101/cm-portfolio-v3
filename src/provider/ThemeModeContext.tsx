@@ -7,6 +7,7 @@ export interface IThemeModeContext {
   handleToggleTheme: () => void;
   englishMode: boolean;
   handleToggleLanguage: () => void;
+  styles: any;
 }
 
 export const ThemeModeContext =

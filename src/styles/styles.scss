@@ -15,6 +15,7 @@ $transition: all 0.3s ease-in-out;
   background-color: $dark !important;
   .hero-text {
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
     border-left: 3px solid $light-blue;
     padding: 0 24px;

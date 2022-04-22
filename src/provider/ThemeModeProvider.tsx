@@ -1,5 +1,6 @@
 import { ReactNode, useContext, useState } from "react";
 import { ThemeModeContext } from "./ThemeModeContext";
+import { useSpring } from "react-spring";
 
 function useTheme() {
   const context = useContext(ThemeModeContext);
@@ -23,6 +24,18 @@ const ThemeModeProvider = (props: { children: ReactNode }) => {
   const dark = "#15141a";
   const light = "#fbfbfe";
 
+  const styles = useSpring({
+    from: {
+      transform: "translateX(-800px)",
+      opacity: 0,
+    },
+    to: {
+      transform: "translateX(0)",
+      opacity: 1,
+    },
+    delay: 1200,
+  });
+
   return (
     <ThemeModeContext.Provider
       value={{
@@ -32,6 +45,7 @@ const ThemeModeProvider = (props: { children: ReactNode }) => {
         handleToggleTheme,
         englishMode,
         handleToggleLanguage,
+        styles,
       }}
     >
       {props.children}

@@ -4,21 +4,24 @@ import { Col, Container, Row } from "reactstrap";
 import HeroHeader from "../../../utils/HeroHeader";
 import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
+import { animated } from "react-spring";
+import { useTheme } from "../../../provider/ThemeModeProvider";
 
 const Hero = () => {
+  const { styles } = useTheme();
   return (
     <Container id="home" tag="header" fluid className="hero-container">
-      <Row>
+      <animated.div style={styles} className="row">
         <Col
           xs={2}
           className="justify-content-center d-flex flex-column align-items-end follow-icons"
         >
-          <Link to="/">
+          <a href="">
             <FontAwesomeIcon icon={faLinkedin} className="icon mb-3" />
-          </Link>
-          <Link to="/">
+          </a>
+          <a href="/">
             <FontAwesomeIcon icon={faGithubSquare} className="icon mt-3" />
-          </Link>
+          </a>
         </Col>
         <Col xs={10}>
           <HeroHeader
@@ -31,7 +34,7 @@ const Hero = () => {
             esButton="Proyectos Recientes"
           />
         </Col>
-      </Row>
+      </animated.div>
     </Container>
   );
 };

@@ -56,13 +56,23 @@ const Project = ({
         <CardText>{englishMode ? spDescription : enDescription}</CardText>
         <Col xs={12} className="d-flex justify-content-center">
           {page !== "" && (
-            <a href={page} target="_blank" className="btn btn-primary mx-2">
+            <a
+              href={page}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-primary mx-2"
+            >
               <FontAwesomeIcon icon={faLink} />
             </a>
           )}
 
           {repo !== "" && (
-            <a href={repo} target="_blank" className="btn btn-primary mx-2">
+            <a
+              href={repo}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-primary mx-2"
+            >
               <FontAwesomeIcon icon={faGithub} />
             </a>
           )}
