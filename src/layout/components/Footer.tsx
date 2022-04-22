@@ -8,6 +8,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import { useTheme } from "../../provider/ThemeModeProvider";
+import { scrollTo } from "../../utils/ScrollTo";
 
 const Footer = () => {
   const { englishMode } = useTheme();
@@ -24,21 +25,37 @@ const Footer = () => {
             </Col>
           </Col>
           <Col xs={12} md={4} className="d-flex flex-column">
-            <Link to="/" className="links">
+            <Link
+              to="/"
+              className="links"
+              onClick={() => {
+                scrollTo("#home");
+              }}
+            >
               {englishMode ? "Inicio" : "Home"}
             </Link>
-            <Link to="/" className="links">
-              {englishMode ? "Projectos" : "Projects"}
-            </Link>
+            <a
+              onClick={() => {
+                scrollTo("#projects");
+              }}
+              className="links"
+            >
+              {englishMode ? "Proyectos" : "Projects"}
+            </a>
           </Col>
           <Col xs={12} md={4} className="d-flex flex-column">
-            <Link to="/" className="links">
+            <a onClick={() => scrollTo("#about")} className="links">
               {englishMode ? "Sobre Mi" : "About"}
-            </Link>
+            </a>
 
-            <Link to="/" className="links">
-              Blog
-            </Link>
+            <a
+              href="https://blog.carlamontano.tech"
+              target="_blank"
+              rel="noreferrer"
+              className="links"
+            >
+              Contact
+            </a>
           </Col>
           <Col xs={12} md={4} className="">
             <h5>{englishMode ? "Conversemos" : "Let's Connect"} </h5>

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import {
   Collapse,
-  Container,
   Nav,
   Navbar,
   NavbarBrand,
@@ -12,15 +11,11 @@ import {
 import { useTheme } from "../../provider/ThemeModeProvider";
 import ToggleLangButton from "./ToggleLangButton";
 import ToggleModeButton from "./ToggleModeButton";
+import { scrollTo } from "../../utils/ScrollTo";
 
 const TopNavigation = () => {
   const { englishMode } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
-
-  const scrollTo = (section: string) => {
-    const anchor = document.querySelector(`${section}`);
-    anchor?.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -33,7 +28,7 @@ const TopNavigation = () => {
           <img src="../../../logobrand.png" alt="Logo" />
         </NavbarBrand>
         <NavbarToggler className="me-2" onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar className="">
+        <Collapse isOpen={isOpen} navbar>
           <Nav navbar className="nav-links">
             <NavItem className="my-2 my-md-0">
               <ToggleModeButton />
@@ -44,7 +39,10 @@ const TopNavigation = () => {
             <NavItem className="my-2 my-md-0">
               <NavLink
                 to="/"
-                onClick={() => scrollTo("#home")}
+                onClick={() => {
+                  scrollTo("#home");
+                  isOpen && toggle();
+                }}
                 className="links"
               >
                 {englishMode ? "Inicio" : "Home"}
@@ -54,6 +52,7 @@ const TopNavigation = () => {
               <a
                 onClick={() => {
                   scrollTo("#projects");
+                  isOpen && toggle();
                 }}
                 className="links"
               >
@@ -61,12 +60,24 @@ const TopNavigation = () => {
               </a>
             </NavItem>
             <NavItem className="my-2 my-md-0">
-              <a onClick={() => scrollTo("#about")} className="links">
+              <a
+                onClick={() => {
+                  scrollTo("#about");
+                  isOpen && toggle();
+                }}
+                className="links"
+              >
                 {englishMode ? "Sobre Mi" : "About"}
               </a>
             </NavItem>
             <NavItem className="my-2 my-md-0">
-              <a onClick={() => scrollTo("#contact")} className="links">
+              <a
+                onClick={() => {
+                  scrollTo("#contact");
+                  isOpen && toggle();
+                }}
+                className="links"
+              >
                 {englishMode ? "Contacto" : "Contact"}
               </a>
             </NavItem>

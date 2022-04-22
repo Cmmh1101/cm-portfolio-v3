@@ -18,6 +18,15 @@ nav {
       display: flex;
       justify-content: flex-end;
       align-items: center;
+      .links {
+        cursor: pointer;
+        color: $light;
+        text-decoration: none;
+        transition: $transition;
+        &:hover {
+          color: $light-blue;
+        }
+      }
       button,
       a {
         margin: 0 15px;
@@ -55,8 +64,10 @@ footer {
       color: $light;
       text-decoration: none;
       padding: 10px 0;
+      transition: $transition;
       &:hover {
         color: $light-blue;
+        cursor: pointer;
       }
     }
     .footer-icons {
