@@ -21,7 +21,7 @@ const HeroHeader = ({
   enButton,
   esButton,
 }: Props) => {
-  const { englishMode, styles } = useTheme();
+  const { englishMode, styles, darkMode } = useTheme();
   return (
     <div className="hero-text">
       {englishMode ? (

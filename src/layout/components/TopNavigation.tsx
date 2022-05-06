@@ -14,7 +14,7 @@ import ToggleModeButton from "./ToggleModeButton";
 import { scrollTo } from "../../utils/ScrollTo";
 
 const TopNavigation = () => {
-  const { englishMode } = useTheme();
+  const { englishMode, darkMode, dark, light } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -23,7 +23,17 @@ const TopNavigation = () => {
 
   return (
     <nav>
-      <Navbar fixed="top" expand="md" dark className="navigation shadow">
+      <Navbar
+        style={
+          darkMode
+            ? { color: light, backgroundColor: dark }
+            : { color: dark, backgroundColor: light }
+        }
+        fixed="top"
+        expand="md"
+        dark
+        className="navigation shadow"
+      >
         <NavbarBrand href="#home" className="logo-container">
           <img src="../../../logobrand.png" alt="Logo" />
         </NavbarBrand>
@@ -44,6 +54,7 @@ const TopNavigation = () => {
                   isOpen && toggle();
                 }}
                 className="links"
+                style={darkMode ? { color: light } : { color: dark }}
               >
                 {englishMode ? "Inicio" : "Home"}
               </NavLink>
@@ -55,6 +66,7 @@ const TopNavigation = () => {
                   isOpen && toggle();
                 }}
                 className="links"
+                style={darkMode ? { color: light } : { color: dark }}
               >
                 {englishMode ? "Proyectos" : "Projects"}
               </button>
@@ -66,6 +78,7 @@ const TopNavigation = () => {
                   isOpen && toggle();
                 }}
                 className="links"
+                style={darkMode ? { color: light } : { color: dark }}
               >
                 {englishMode ? "Sobre Mi" : "About"}
               </button>
@@ -79,6 +92,7 @@ const TopNavigation = () => {
                 }}
                 rel="noreferrer"
                 className="links"
+                style={darkMode ? { color: light } : { color: dark }}
               >
                 Blog
               </a>
@@ -90,6 +104,7 @@ const TopNavigation = () => {
                   isOpen && toggle();
                 }}
                 className="links"
+                style={darkMode ? { color: light } : { color: dark }}
               >
                 {englishMode ? "Contacto" : "Contact"}
               </button>
