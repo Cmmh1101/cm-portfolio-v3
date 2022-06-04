@@ -8,11 +8,6 @@ const AppRouter = () => {
     <Routes>
       <Route path="/" element={<HomePage />} />
 
-      {/* <Route />
-                <Route />
-                <Route />
-                 */}
-
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
