@@ -21,9 +21,12 @@ const HeroHeader = ({
   enButton,
   esButton,
 }: Props) => {
-  const { englishMode, styles } = useTheme();
+  const { englishMode, styles, darkMode } = useTheme();
   return (
-    <div className="hero-text">
+    <div
+      className="hero-text"
+      style={darkMode ? { color: "white" } : { color: "black" }}
+    >
       {englishMode ? (
         <animated.div style={styles}>
           <h1>{spTitle}</h1>

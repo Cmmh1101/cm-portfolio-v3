@@ -7,9 +7,21 @@ import { animated } from "react-spring";
 import { useTheme } from "../../../provider/ThemeModeProvider";
 
 const Hero = () => {
-  const { styles } = useTheme();
+  const { styles, darkMode } = useTheme();
   return (
-    <Container id="home" tag="header" fluid className="hero-container">
+    <Container
+      id="home"
+      tag="header"
+      fluid
+      className="hero-container"
+      style={
+        darkMode
+          ? {
+              backgroundImage: "url('../images/general/dark-hero-1.svg')",
+            }
+          : { backgroundImage: "url('../images/general/light-hero.svg')" }
+      }
+    >
       <animated.div style={styles} className="row">
         <Col
           xs={2}

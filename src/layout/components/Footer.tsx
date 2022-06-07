@@ -11,17 +11,10 @@ import { useTheme } from "../../provider/ThemeModeProvider";
 import { scrollTo } from "../../utils/ScrollTo";
 
 const Footer = () => {
-  const { englishMode, dark, light, darkMode } = useTheme();
+  const { englishMode } = useTheme();
 
   return (
-    <footer
-      className="pt-5 shadow"
-      style={
-        darkMode
-          ? { color: light, backgroundColor: dark }
-          : { color: dark, backgroundColor: light }
-      }
-    >
+    <footer className="pt-5 shadow">
       <Container>
         <Row className="footer">
           <Col xs={12} className="d-flex justify-content-center mb-5">
@@ -35,7 +28,6 @@ const Footer = () => {
             <Link
               to="/"
               className="links"
-              style={darkMode ? { color: light } : { color: dark }}
               onClick={() => {
                 scrollTo("#home");
               }}
@@ -47,23 +39,17 @@ const Footer = () => {
                 scrollTo("#projects");
               }}
               className="links"
-              style={darkMode ? { color: light } : { color: dark }}
             >
               {englishMode ? "Proyectos" : "Projects"}
             </button>
           </Col>
           <Col xs={12} md={4} className="d-flex flex-column">
-            <button
-              style={darkMode ? { color: light } : { color: dark }}
-              onClick={() => scrollTo("#about")}
-              className="links"
-            >
+            <button onClick={() => scrollTo("#about")} className="links">
               {englishMode ? "Sobre Mi" : "About"}
             </button>
 
             <a
               href="https://blog.carlamontano.tech"
-              style={darkMode ? { color: light } : { color: dark }}
               target="_blank"
               rel="noreferrer"
               className="links"

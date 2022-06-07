@@ -3,7 +3,7 @@ main {
 }
 
 nav {
-  // background-color: $light;
+  background-color: $dark;
   border-bottom: 2px solid $dark-gray;
 
   .navigation {
@@ -24,7 +24,7 @@ nav {
         outline: none;
         border: none;
         cursor: pointer;
-        // color: $light;
+        color: $light;
         text-decoration: none;
         transition: $transition;
         &:hover {
@@ -60,8 +60,8 @@ nav {
 }
 
 footer {
-  // background-color: $dark;
-  // color: $light;
+  background-color: $dark;
+  color: $light;
   border-top: 2px solid $dark-gray;
   .footer {
     display: flex;
@@ -70,7 +70,7 @@ footer {
     text-align: center;
     a,
     .links {
-      // color: $light;
+      color: $light;
       background-color: transparent;
       outline: none;
       border: none;
