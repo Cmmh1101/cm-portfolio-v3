@@ -27,23 +27,22 @@ const HeroHeader = ({
       className="hero-text"
       style={darkMode ? { color: "white" } : { color: "black" }}
     >
-      {englishMode ? (
-        <animated.div style={styles}>
-          <h1>{spTitle}</h1>
-          <p>{spText}</p>
-          <Button onClick={() => scrollTo("#projects")} outline type="button">
-            {esButton}
-          </Button>
-        </animated.div>
-      ) : (
-        <animated.div style={styles}>
-          <h1>{enTitle}</h1>
-          <p>{enText}</p>
-          <Button onClick={() => scrollTo("#projects")} outline type="button">
-            {enButton}
-          </Button>
-        </animated.div>
-      )}
+      <animated.div style={styles}>
+        <h1>{englishMode ? spTitle : enTitle}</h1>
+        <p>{englishMode ? spText : enText}</p>
+        <Button
+          onClick={() => scrollTo("#projects")}
+          style={
+            darkMode
+              ? { color: "white" }
+              : { color: "black", borderColor: "black" }
+          }
+          outline
+          type="button"
+        >
+          {englishMode ? esButton : enButton}
+        </Button>
+      </animated.div>
     </div>
   );
 };

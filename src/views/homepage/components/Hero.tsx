@@ -19,7 +19,7 @@ const Hero = () => {
           ? {
               backgroundImage: "url('../images/general/dark-hero-1.svg')",
             }
-          : { backgroundImage: "url('../images/general/light-hero.svg')" }
+          : { backgroundImage: "url('../images/general/light-hero-1.svg')" }
       }
     >
       <animated.div style={styles} className="row">
@@ -32,14 +32,30 @@ const Hero = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FontAwesomeIcon icon={faLinkedin} className="icon mb-3" />
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className="icon mb-3"
+              style={
+                darkMode
+                  ? { backgroundColor: "white", color: "black" }
+                  : { backgroundColor: "black", color: "white" }
+              }
+            />
           </a>
           <a
             href="https://github.com/cmmh1101"
             target="_blank"
             rel="noreferrer"
           >
-            <FontAwesomeIcon icon={faGithubSquare} className="icon mt-3" />
+            <FontAwesomeIcon
+              icon={faGithubSquare}
+              className="icon mt-3"
+              style={
+                darkMode
+                  ? { backgroundColor: "white", color: "black" }
+                  : { backgroundColor: "black", color: "white" }
+              }
+            />
           </a>
         </Col>
         <Col xs={10}>

@@ -85,39 +85,68 @@ const ProjectsList = () => {
   });
 
   const [filteredProjects, setFilteredPropjects] = useState<any>(all);
+  const [allActive, setAllActive] = useState(true);
+  const [cmsActive, setCmsActive] = useState(false);
+  const [frontActive, setFrontActive] = useState(false);
+  const [fullActive, setFullActive] = useState(false);
 
   const handleFrontButton = () => {
     setFilteredPropjects(front);
-    console.log(front);
+    setAllActive(false);
+    // setCmsActive(!cmsActive);
+    // setFrontActive(!frontActive);
   };
   const handleFullButton = () => {
     setFilteredPropjects(fullstack);
-
-    console.log(fullstack);
+    setAllActive(false);
+    setCmsActive(!cmsActive);
+    setFrontActive(false);
+    setFullActive(!fullActive);
   };
   const handleCmsButton = () => {
     setFilteredPropjects(cms);
+    setAllActive(false);
+    setCmsActive(!cmsActive);
+    setFrontActive(false);
+    setFullActive(false);
   };
   const handleAllButton = () => {
     setFilteredPropjects(all);
-    console.log(all);
+    setAllActive(!allActive);
+    setCmsActive(!cmsActive);
+    setFrontActive(false);
+    setFullActive(false);
   };
+
+  // filteredProjects === all ? setAllActive(true) : setAllActive(false);
 
   return (
     <div className="my-5">
       <AnimationOnScroll animateIn="animate__fadeInLeft">
         <ButtonGroup className="col-12 button-group">
           <Button
+            // style={
+            //   filteredProjects === all
+            //     ? { backgroundColor: "#fbfbfe", color: "#196eff" }
+            //     : {}
+            // }
             style={
-              filteredProjects === all
-                ? { backgroundColor: "#fbfbfe", color: "#196eff" }
-                : {}
+              allActive ? { backgroundColor: "#fbfbfe", color: "#196eff" } : {}
             }
             onClick={() => handleAllButton()}
           >
             All
           </Button>
-          <Button onClick={() => handleFrontButton()}>Front End</Button>
+          <Button
+            style={
+              filteredProjects === front
+                ? { backgroundColor: "#fbfbfe", color: "#196eff" }
+                : {}
+            }
+            onClick={() => handleFrontButton()}
+          >
+            Front End
+          </Button>
           <Button onClick={() => handleFullButton()}>Full Stack</Button>
           <Button onClick={() => handleCmsButton()}>CMS</Button>
         </ButtonGroup>
