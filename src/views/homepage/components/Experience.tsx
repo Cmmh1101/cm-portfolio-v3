@@ -13,10 +13,10 @@ const Experience = (props: Props) => {
     <Row xs={12} className="mt-5">
       <SubHeader enTitle="Experience" spTitle="Experiencia" />
       <Col xs={12}>
-        {experience.map((exp) => {
+        {experience.map((exp, i) => {
           return (
             <AnimationOnScroll animateIn="animate__fadeIn animate__delay-1s">
-              <Col key={exp.name} className="mb-5 experience-box">
+              <Col key={i} className="mb-5 experience-box">
                 <h3>{englishMode ? exp.spTitle : exp.enTitle}</h3>
                 <span className="small">
                   {exp.location + " / " + exp.startDate + " - " + exp.endDate}

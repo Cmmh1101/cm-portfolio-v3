@@ -93,8 +93,8 @@ const ProjectsList = () => {
   const handleFrontButton = () => {
     setFilteredPropjects(front);
     setAllActive(false);
-    // setCmsActive(!cmsActive);
-    // setFrontActive(!frontActive);
+    setCmsActive(false);
+    setFrontActive(!frontActive);
   };
   const handleFullButton = () => {
     setFilteredPropjects(fullstack);
@@ -130,9 +130,9 @@ const ProjectsList = () => {
             //     ? { backgroundColor: "#fbfbfe", color: "#196eff" }
             //     : {}
             // }
-            style={
-              allActive ? { backgroundColor: "#fbfbfe", color: "#196eff" } : {}
-            }
+            // style={
+            //   allActive ? { backgroundColor: "#fbfbfe", color: "#196eff" } : {}
+            // }
             onClick={() => handleAllButton()}
           >
             All

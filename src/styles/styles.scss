@@ -72,12 +72,23 @@ $transition: all 0.3s ease-in-out;
     background-color: $light-blue;
     outline: none;
     border: 2px solid $mid-blue;
+    &:link {
+      background-color: $light;
+      color: $light-blue;
+      border: 2px solid $mid-blue;
+    }
     &:hover {
       background-color: $light;
       color: $light-blue;
       border: 2px solid $mid-blue;
     }
     &:focus {
+      background-color: $light;
+      color: $light-blue;
+      border: 2px solid $mid-blue;
+      outline: none;
+    }
+    &:active {
       background-color: $light;
       color: $light-blue;
       border: 2px solid $mid-blue;
