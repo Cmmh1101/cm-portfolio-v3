@@ -8,7 +8,7 @@ const Projects = () => {
     <Container id="projects">
       <Row className="row">
         <Col xs={12} className="my-5 projects-section">
-          <SubHeader enTitle="Projects" spTitle="Projectos" />
+          <SubHeader enTitle="Recent Projects" spTitle="Proyectos Recientes" />
           <ProjectsList />
         </Col>
       </Row>

@@ -107,9 +107,10 @@ $transition: all 0.3s ease-in-out;
 }
 
 .project-box {
+  height: 704px;
   .image-container {
     overflow: hidden;
-    height: 350px;
+    height: 360px;
     img {
       transition: $transition;
     }
