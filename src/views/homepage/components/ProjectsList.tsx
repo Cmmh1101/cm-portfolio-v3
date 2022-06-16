@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { ButtonGroup, Button, Row, Col } from "reactstrap";
+import React from "react";
+import { Row, Col } from "reactstrap";
 import projectsData from "../../../projectsData";
 import Project from "./Project";
 import { AnimationOnScroll } from "react-animation-on-scroll";
