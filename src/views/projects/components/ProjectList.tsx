@@ -9,7 +9,6 @@ import { useTheme } from "../../../provider/ThemeModeProvider";
 interface Props {}
 
 const ProjectList = (props: Props) => {
-  //   const [customClassName, setCustomCLassName] = useState<string>("");
   const { englishMode, darkMode, dark, light } = useTheme();
   return (
     <Row className="d-flex">
@@ -19,30 +18,30 @@ const ProjectList = (props: Props) => {
           return (
             <Col xs={12} key={i} className="d-flex project-item">
               <Col
-                md={7}
+                md={8}
                 key={i}
                 className={`project-image-container ${
-                  i % 2 === 0 ? "text-info order-1" : "text-danger order-2"
+                  i % 2 === 0 ? "order-1" : "order-2"
                 }`}
               >
                 <img src={p.image} alt={p.enAlt} className="project-img" />
                 <div className="overlay" />
               </Col>
               <Col
-                md={5}
+                md={4}
                 key={i}
                 className={`project-description ${
-                  i % 2 === 0 ? "text-info order-2" : "text-danger order-1"
+                  i % 2 === 0 ? "order-2" : "order-1"
                 }`}
               >
                 <Card
-                  className={`my-auto project-card ${
+                  className={`my-auto project-card shadow ${
                     i % 2 === 0 ? "odd" : "even"
                   }`}
                   style={
                     darkMode
-                      ? { backgroundColor: `${light}`, color: `${dark}` }
-                      : { color: `${light}`, backgroundColor: `${dark}` }
+                      ? { backgroundColor: "#23222b", color: `${light}` }
+                      : { color: `${dark}`, backgroundColor: "#e7e9eb" }
                   }
                 >
                   <CardBody className="py-4">
