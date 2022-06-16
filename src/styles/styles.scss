@@ -120,6 +120,52 @@ $transition: all 0.3s ease-in-out;
   }
 }
 
+// NEW PROJECT ITEM
+
+.project-item {
+  margin: 4rem 0;
+  .project-image-container {
+    position: relative;
+    .project-img {
+      // position: relative;
+      width: 100%;
+      height: 600px;
+      border-radius: 5px;
+      z-index: 1;
+    }
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 600px;
+      background-color: #146cb4c2;
+      border-radius: 5px;
+      z-index: 5;
+      top: 0;
+      left: 0;
+      transition: $transition;
+    }
+  }
+  .project-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    .project-card {
+      background-color: $dark-gray;
+      height: 60%;
+    }
+    .odd {
+      margin-left: -200px;
+    }
+    .even {
+      margin-right: -200px;
+    }
+  }
+  &:hover .overlay {
+    background-color: transparent;
+  }
+}
+
 //  skills
 
 .skills-container {
