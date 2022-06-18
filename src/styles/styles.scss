@@ -127,7 +127,6 @@ $transition: all 0.3s ease-in-out;
   .project-image-container {
     position: relative;
     .project-img {
-      // position: relative;
       width: 100%;
       height: 600px;
       border-radius: 5px;
@@ -304,4 +303,42 @@ $transition: all 0.3s ease-in-out;
       }
     }
   }
+}
+
+@media only screen and (max-width: 767px) {
+  .project-item {
+    // margin: 4rem 0;
+    .project-image-container {
+      // position: relative;
+      .odd-img .project-img {
+        border-radius: 30px !important;
+      }
+      .project-img {
+        height: 400px;
+      }
+
+      .overlay {
+        height: 400px;
+      }
+    }
+    .project-description {
+      .project-card {
+        background-color: #e7e9eb;
+        min-height: 100%;
+        height: auto;
+      }
+      .odd {
+        margin-left: 0 !important;
+        border-radius: 0 0 10px 10px;
+      }
+      .even {
+        margin-right: 0 !important;
+      }
+    }
+  }
+  // .odd-img {
+  //   img {
+  //     border-radius: 30px 5px 0 0;
+  //   }
+  // }
 }
