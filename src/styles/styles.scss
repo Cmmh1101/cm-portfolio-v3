@@ -126,16 +126,17 @@ $transition: all 0.3s ease-in-out;
   margin: 4rem 0;
   .project-image-container {
     position: relative;
+    height: 600px;
     .project-img {
       width: 100%;
-      height: 600px;
+      height: 100%;
       border-radius: 5px;
       z-index: 1;
     }
     .overlay {
       position: absolute;
       width: 100%;
-      height: 600px;
+      height: 100%;
       background-color: #146cb4c2;
       border-radius: 5px;
       z-index: 5;
@@ -151,7 +152,8 @@ $transition: all 0.3s ease-in-out;
     z-index: 10;
     .project-card {
       background-color: #e7e9eb;
-      height: 60%;
+      min-height: 40%;
+      height: auto;
     }
     .odd {
       margin-left: -200px;
@@ -305,40 +307,33 @@ $transition: all 0.3s ease-in-out;
   }
 }
 
+// RESPONSIVE DESIGN
+
 @media only screen and (max-width: 767px) {
   .project-item {
-    // margin: 4rem 0;
     .project-image-container {
-      // position: relative;
-      .odd-img .project-img {
-        border-radius: 30px !important;
-      }
+      height: 400px;
       .project-img {
-        height: 400px;
+        height: 100%;
+        border-radius: 0;
       }
-
       .overlay {
-        height: 400px;
+        height: 100%;
+        border-radius: 0;
       }
     }
     .project-description {
       .project-card {
         background-color: #e7e9eb;
-        min-height: 100%;
         height: auto;
+        border-radius: 0;
       }
       .odd {
         margin-left: 0 !important;
-        border-radius: 0 0 10px 10px;
       }
       .even {
         margin-right: 0 !important;
       }
     }
   }
-  // .odd-img {
-  //   img {
-  //     border-radius: 30px 5px 0 0;
-  //   }
-  // }
 }

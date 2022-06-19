@@ -42,7 +42,7 @@ const ProjectList = (props: Props) => {
                   }`}
                 >
                   <Card
-                    className={`my-auto project-card shadow ${
+                    className={`my-auto project-card shadow p-4 ${
                       i % 2 === 0 ? "odd" : "even"
                     }`}
                     style={
@@ -51,7 +51,7 @@ const ProjectList = (props: Props) => {
                         : { color: `${dark}`, backgroundColor: "#e7e9eb" }
                     }
                   >
-                    <CardBody className="py-4">
+                    <CardBody className="">
                       <CardTitle tag="h5">
                         {englishMode ? p.spTitle : p.enTitle}
                       </CardTitle>
@@ -63,7 +63,10 @@ const ProjectList = (props: Props) => {
                       <CardText>
                         {englishMode ? p.spDescription : p.enDescription}
                       </CardText>
-                      <Col xs={12} className="d-flex justify-content-center">
+                      <Col
+                        xs={12}
+                        className="d-flex justify-content-center mt-5"
+                      >
                         {p.pageLink !== "" && (
                           <a
                             href={p.pageLink}
