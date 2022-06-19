@@ -27,7 +27,7 @@ const ProjectList = (props: Props) => {
                   md={8}
                   key={i}
                   className={`project-image-container ${
-                    i % 2 === 0 ? "order-1 odd-img" : "order-2 even-img"
+                    i % 2 === 0 ? "order-md-1 odd-img" : "order-md-2 even-img"
                   }`}
                 >
                   <img src={p.image} alt={p.enAlt} className="project-img" />
@@ -38,7 +38,7 @@ const ProjectList = (props: Props) => {
                   md={4}
                   key={i}
                   className={`project-description ${
-                    i % 2 === 0 ? "order-2" : "order-1"
+                    i % 2 === 0 ? "order-md-2" : "order-md-1"
                   }`}
                 >
                   <Card
