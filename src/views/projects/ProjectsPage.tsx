@@ -10,7 +10,10 @@ const ProjectsPage = (props: Props) => {
     <Container id="projects">
       <Row className="row">
         <Col xs={12} className="my-5 projects-section">
-          <SubHeader enTitle="Recent Projects" spTitle="Proyectos Recientes" />
+          <SubHeader
+            enTitle="Featured Projects"
+            spTitle="Proyectos Recientes"
+          />
           <ProjectList />
         </Col>
       </Row>
