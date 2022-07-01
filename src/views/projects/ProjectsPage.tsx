@@ -1,9 +1,11 @@
 import React from "react";
-import { Col, Container, Row } from "reactstrap";
-import SubHeader from "../../../utils/SubHeader";
-import ProjectsList from "./ProjectsList";
+import { Container, Row, Col } from "reactstrap";
+import SubHeader from "../../utils/SubHeader";
+import ProjectList from "./components/ProjectList";
 
-const Projects = () => {
+interface Props {}
+
+const ProjectsPage = (props: Props) => {
   return (
     <Container id="projects">
       <Row className="row">
@@ -12,11 +14,11 @@ const Projects = () => {
             enTitle="Featured Projects"
             spTitle="Proyectos Recientes"
           />
-          <ProjectsList />
+          <ProjectList />
         </Col>
       </Row>
     </Container>
   );
 };
 
-export default Projects;
+export default ProjectsPage;
