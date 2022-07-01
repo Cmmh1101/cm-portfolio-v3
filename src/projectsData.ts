@@ -10,7 +10,7 @@ const projects = [
       enAlt: "Project demo",
       featured: true,
       type: "fullstack",
-      technologies: 'Styled Components ReactJs Nodejs Express MongoDb',
+      technologies: 'Styled Components ReactJs Nodejs Express MongoDb Heroku',
       all: 'true',
       customClass: 'full-visible',
       pageLink: "https://job-tracker-prod.herokuapp.com",
@@ -27,11 +27,11 @@ const projects = [
       enAlt: "Project demo",
       featured: true,
       type: "frontend",
-      technologies: 'Gatsby ReactJs GraphQl Contentful CSS ',
+      technologies: 'Gatsby ReactJs GraphQl Contentful CSS Netlify',
       all: 'true',
-      customClass: 'full-visible',
-      pageLink: "https://job-tracker-prod.herokuapp.com",
-      gitHub: "https://github.com/Cmmh1101/mern-job-tracker"
+      customClass: 'front-visible',
+      pageLink: "https://my-recipes-project.netlify.app",
+      gitHub: "https://github.com/Cmmh1101/recipes"
       },
       {
       name: "blog",
