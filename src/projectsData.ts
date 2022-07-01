@@ -140,7 +140,7 @@ const projects = [
       spTitle: "Organizacion Pagina Web",
       enTitle: "Non-Profit Website",
       date: "08/04/2021",
-      image: "/../../images/projects/servinginchrist.png",
+      image: "/../../images/projects/serving-in-christ.png",
       spDescription: "Mi blog personal es un proyecto full stack, utilizando Reactjs y Typescript para el fronend y nodejs, express y mongodb para el backedn y base de datos",
       enDescription: "Full stack Personal blog project, using Reactjs and Typescript for frontend, and node and mongo for backend and database respertively",
       enAlt: "Non-profit",
