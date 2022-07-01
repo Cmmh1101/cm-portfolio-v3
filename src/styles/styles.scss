@@ -60,65 +60,65 @@ $transition: all 0.3s ease-in-out;
 
 // projects section
 
-.sub-header {
-  h2 {
-    font-size: 2.5rem;
-    font-weight: 900;
-  }
-}
+// .sub-header {
+//   h2 {
+//     font-size: 2.5rem;
+//     font-weight: 900;
+//   }
+// }
 
-.button-group {
-  button {
-    background-color: $light-blue;
-    outline: none;
-    border: 2px solid $mid-blue;
-    &:link {
-      background-color: $light;
-      color: $light-blue;
-      border: 2px solid $mid-blue;
-    }
-    &:hover {
-      background-color: $light;
-      color: $light-blue;
-      border: 2px solid $mid-blue;
-    }
-    &:focus {
-      background-color: $light;
-      color: $light-blue;
-      border: 2px solid $mid-blue;
-      outline: none;
-    }
-    &:active {
-      background-color: $light;
-      color: $light-blue;
-      border: 2px solid $mid-blue;
-      outline: none;
-    }
-  }
-}
+// .button-group {
+//   button {
+//     background-color: $light-blue;
+//     outline: none;
+//     border: 2px solid $mid-blue;
+//     &:link {
+//       background-color: $light;
+//       color: $light-blue;
+//       border: 2px solid $mid-blue;
+//     }
+//     &:hover {
+//       background-color: $light;
+//       color: $light-blue;
+//       border: 2px solid $mid-blue;
+//     }
+//     &:focus {
+//       background-color: $light;
+//       color: $light-blue;
+//       border: 2px solid $mid-blue;
+//       outline: none;
+//     }
+//     &:active {
+//       background-color: $light;
+//       color: $light-blue;
+//       border: 2px solid $mid-blue;
+//       outline: none;
+//     }
+//   }
+// }
 
-.front-visible {
-  background-color: $light-blue;
-  opacity: 1;
-}
+// .front-visible {
+//   background-color: $light-blue;
+//   opacity: 1;
+// }
 
-.no-visible {
-  opacity: 0;
-}
+// .no-visible {
+//   opacity: 0;
+// }
 
-.project-box {
-  height: 704px;
-  .image-container {
-    overflow: hidden;
-    height: 360px;
-    img {
-      transition: $transition;
-    }
-  }
-  &:hover img {
-    transform: scale(1.05);
-  }
-}
+// .project-box {
+//   height: 704px;
+//   .image-container {
+//     overflow: hidden;
+//     height: 360px;
+//     img {
+//       transition: $transition;
+//     }
+//   }
+//   &:hover img {
+//     transform: scale(1.05);
+//   }
+// }
 
 // NEW PROJECT ITEM
 
@@ -137,12 +137,12 @@ $transition: all 0.3s ease-in-out;
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: #146cb4c2;
+      background: rgb(169, 183, 255);
+      background: linear-gradient(165deg, rgba(169, 183, 255, 0.709) 0%, rgba(1, 61, 201, 0.884) 90%);
       border-radius: 5px;
       z-index: 5;
       top: 0;
       left: 0;
-      transition: $transition;
     }
   }
   .project-description {
@@ -162,9 +162,11 @@ $transition: all 0.3s ease-in-out;
       margin-right: -200px;
     }
   }
+    transition: all 0.3s ease-in-out;
   &:hover .overlay {
-    background-color: transparent;
+    background: transparent;
   }
+   
 }
 
 //  skills
