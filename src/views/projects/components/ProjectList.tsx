@@ -24,7 +24,7 @@ const ProjectList = (props: Props) => {
               <Col xs={12} className="d-flex flex-wrap project-item">
                 <Col
                   xs={12}
-                  md={8}
+                  md={7}
                   key={i}
                   className={`project-image-container ${
                     i % 2 === 0 ? "order-md-1 odd-img" : "order-md-2 even-img"
@@ -35,7 +35,7 @@ const ProjectList = (props: Props) => {
                 </Col>
                 <Col
                   xs={12}
-                  md={4}
+                  md={5}
                   key={i}
                   className={`project-description ${
                     i % 2 === 0 ? "order-md-2" : "order-md-1"
