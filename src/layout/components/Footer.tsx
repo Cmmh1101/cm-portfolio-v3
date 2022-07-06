@@ -12,6 +12,7 @@ import { scrollTo } from "../../utils/ScrollTo";
 
 const Footer = () => {
   const { englishMode } = useTheme();
+  const year = new Date();
 
   return (
     <footer className="pt-5 shadow">
@@ -85,7 +86,7 @@ const Footer = () => {
             </a>
           </Col>
           <Col xs={12} className="mt-5 mb-1 small">
-            <span>2022 | All right reserved</span>
+            <span> {year.getFullYear()} | All right reserved</span>
           </Col>
         </Row>
       </Container>
