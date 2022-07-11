@@ -21,7 +21,7 @@ const HeroHeader = ({
   enButton,
   esButton,
 }: Props) => {
-  const { englishMode, styles, darkMode } = useTheme();
+  const { englishMode, styles, darkMode, light, dark } = useTheme();
   return (
     <div
       className="hero-text"
@@ -34,8 +34,8 @@ const HeroHeader = ({
           onClick={() => scrollTo("#projects")}
           style={
             darkMode
-              ? { color: "white" }
-              : { color: "black", borderColor: "black" }
+              ? { color: light, backgroundColor: dark }
+              : { color: dark, borderColor: dark }
           }
           outline
           type="button"

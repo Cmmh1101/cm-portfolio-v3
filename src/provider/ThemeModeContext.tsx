@@ -8,7 +8,9 @@ export interface IThemeModeContext {
   englishMode: boolean;
   handleToggleLanguage: () => void;
   styles: any;
+  setDarkMode: (value: boolean) => void;
 }
 
-export const ThemeModeContext =
-  createContext<IThemeModeContext | undefined>(undefined);
+export const ThemeModeContext = createContext<IThemeModeContext | undefined>(
+  undefined
+);
