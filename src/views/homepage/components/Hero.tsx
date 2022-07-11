@@ -60,10 +60,8 @@ const Hero = () => {
         </Col>
         <Col xs={10}>
           <HeroHeader
-            spTitle="Ingeniera de Sistemas"
             spText="Resolviendo problemas de los negocios con desarrollo de
               aplicationes web"
-            enTitle="Software Engineer"
             enText="Solving Problems with full stack web development Solutions"
             enButton="Recent Projects"
             esButton="Proyectos Recientes"
