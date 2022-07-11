@@ -5,22 +5,15 @@ import { scrollTo } from "./ScrollTo";
 import { animated } from "react-spring";
 
 interface Props {
-  enTitle: string;
+  enTitle?: string;
   enText: string;
-  spTitle: string;
+  spTitle?: string;
   spText: string;
   enButton: string;
   esButton: string;
 }
 
-const HeroHeader = ({
-  enText,
-  enTitle,
-  spTitle,
-  spText,
-  enButton,
-  esButton,
-}: Props) => {
+const HeroHeader = ({ enText, spText, enButton, esButton }: Props) => {
   const { englishMode, styles, darkMode, light, dark } = useTheme();
   return (
     <div
@@ -28,7 +21,17 @@ const HeroHeader = ({
       style={darkMode ? { color: "white" } : { color: "black" }}
     >
       <animated.div style={styles}>
-        <h1>{englishMode ? spTitle : enTitle}</h1>
+        <h1>
+          {englishMode ? (
+            <>
+              <span>Desarrolladora</span> de Sofware
+            </>
+          ) : (
+            <>
+              <span>Software</span> Engineer
+            </>
+          )}
+        </h1>
         <p>{englishMode ? spText : enText}</p>
         <Button
           onClick={() => scrollTo("#projects")}

@@ -23,6 +23,9 @@ $transition: all 0.3s ease-in-out;
       font-size: 3rem;
       font-weight: 900;
       margin: 0 0 20px;
+      span {
+color: $light-blue;
+      }
     }
     p {
       font-size: 1.2rem;
@@ -46,6 +49,8 @@ $transition: all 0.3s ease-in-out;
     }
   }
 }
+
+
 
 .follow-icons {
   .icon {
