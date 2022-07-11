@@ -1,4 +1,4 @@
-import { ReactNode, useContext, useState } from "react";
+import { ReactNode, useContext, useEffect, useState } from "react";
 import { ThemeModeContext } from "./ThemeModeContext";
 import { useSpring } from "react-spring";
 
@@ -11,11 +11,12 @@ function useTheme() {
 }
 
 const ThemeModeProvider = (props: { children: ReactNode }) => {
-  const [darkMode, setDarkMode] = useState(true);
-  const [englishMode, setEnglishMode] = useState(false);
+  const [darkMode, setDarkMode] = useState<boolean>(true);
+  const [englishMode, setEnglishMode] = useState<boolean>(false);
 
   const handleToggleLanguage = () => {
     setEnglishMode(!englishMode);
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
   };
 
   const handleToggleTheme = () => {
@@ -34,6 +35,18 @@ const ThemeModeProvider = (props: { children: ReactNode }) => {
     delay: 1200,
   });
 
+  useEffect(() => {
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
+  }, [darkMode]);
+
+  useEffect(() => {
+    const darkMode = JSON.parse(localStorage.getItem("darkMode") || "");
+    if (darkMode) {
+      setDarkMode(darkMode);
+    }
+    // eslint-disable-next-line
+  }, []);
+
   return (
     <ThemeModeContext.Provider
       value={{
@@ -44,6 +57,7 @@ const ThemeModeProvider = (props: { children: ReactNode }) => {
         englishMode,
         handleToggleLanguage,
         styles,
+        setDarkMode,
       }}
     >
       {props.children}
