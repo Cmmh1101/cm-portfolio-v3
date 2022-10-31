@@ -72,7 +72,7 @@ const TopNavigation = () => {
             </NavItem>
             <NavItem className="my-2 my-md-0">
               <a
-                href="https://blog.carlamontano.tech"
+                href="https://journey.carlamontano.tech"
                 target="_blank"
                 onClick={() => {
                   isOpen && toggle();

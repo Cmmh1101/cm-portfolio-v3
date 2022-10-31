@@ -50,7 +50,7 @@ const Footer = () => {
             </button>
 
             <a
-              href="https://blog.carlamontano.tech"
+              href="https://journey.carlamontano.tech"
               target="_blank"
               rel="noreferrer"
               className="links"
