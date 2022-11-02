@@ -38,7 +38,7 @@ const projects = [
       spTitle: "Mi Blog Personal",
       enTitle: "My Personal Blog",
       date: "06/04/2022",
-      image: "/../../images/projects/myblog.png",
+      image: "/../../images/projects/blog.png",
       spDescription: "Mi blog personal es un proyecto personal desarrollado con las technololgias GatsbyJs, Styled-components, CSS y MDX para el contenido. Decidi usar MDX para el contenido incluyendo componentes de ReactJs (JSX) en un documento de markdown",
       enDescription: "This is my personal blog project developed using GatsbyJs, Styled-Components, CSS, and MDX. For my blog, I decided to use MDX to write the content since it offers the hability to write react components in a markdown file. I enjoyed working on this project and learning this technologies.",
       enAlt: "Project demo",
