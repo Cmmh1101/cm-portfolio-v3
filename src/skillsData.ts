@@ -24,6 +24,12 @@ const skills = [
       type: "dev"
       },
       {
+      name: "accessibility",
+      title: "Accessibility",
+      path: "../images/skills/accessibility.svg",
+      type: "dev"
+      },
+      {
       name: "javascript",
       title: "JavaScript",
       path: "../images/skills/cib-js.svg",
