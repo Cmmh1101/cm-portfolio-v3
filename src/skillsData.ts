@@ -42,6 +42,24 @@ const skills = [
       type: "dev"
       },
       {
+      name: "next",
+      title: "NextJs",
+      path: "../images/skills/nextjs.svg",
+      type: "dev"
+      },
+      {
+      name: "gatsby",
+      title: "GatsbyJs",
+      path: "../images/skills/gatsby.svg",
+      type: "dev"
+      },
+      {
+      name: "graphql",
+      title: "GraphQl",
+      path: "../images/skills/graphql.svg",
+      type: "dev"
+      },
+      {
       name: "jestjs",
       title: "JestJs",
       path: "../images/skills/cib-jest.svg",
@@ -62,7 +80,7 @@ const skills = [
       {
       name: "node",
       title: "NodeJs",
-      path: "../images/skills/cib-node-js.svg",
+      path: "../images/skills/nodejs.svg",
       type: "dev"
       },
       {
@@ -83,26 +101,24 @@ const skills = [
       path: "../images/skills/cib-expo.svg",
       type: "dev"
       },
-      {
-      name: "vsc",
-      title: "VSC",
-      path: "../images/skills/cib-visual-studio-code.svg",
-      type: "dev"
-      },
-
-      
-      {
-      name: "aws",
-      title: "AWS",
-      path: "../images/skills/cib-amazon-aws.svg",
-      type: "dev"
-      },
-      {
-      name: "netlify",
-      title: "Netlify",
-      path: "../images/skills/cib-netlify.svg",
-      type: "dev"
-      },
+      // {
+      // name: "vsc",
+      // title: "VSC",
+      // path: "../images/skills/cib-visual-studio-code.svg",
+      // type: "dev"
+      // },
+      // {
+      // name: "aws",
+      // title: "AWS",
+      // path: "../images/skills/cib-amazon-aws.svg",
+      // type: "dev"
+      // },
+      // {
+      // name: "netlify",
+      // title: "Netlify",
+      // path: "../images/skills/cib-netlify.svg",
+      // type: "dev"
+      // },
       {
       name: "git",
       title: "Git",
