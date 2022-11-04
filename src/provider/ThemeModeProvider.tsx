@@ -14,7 +14,7 @@ const ThemeModeProvider = (props: { children: ReactNode }) => {
   const [darkMode, setDarkMode] = useState(() => {
     const saved = localStorage.getItem("darkMode");
     const initialValue = JSON.parse(saved!);
-    return initialValue;
+    return initialValue === null ? true : initialValue;
   });
   const [englishMode, setEnglishMode] = useState(() => {
     const saved = localStorage.getItem("englishMode");
