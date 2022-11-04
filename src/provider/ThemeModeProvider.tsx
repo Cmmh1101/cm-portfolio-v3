@@ -11,12 +11,19 @@ function useTheme() {
 }
 
 const ThemeModeProvider = (props: { children: ReactNode }) => {
-  const [darkMode, setDarkMode] = useState<boolean>(true);
-  const [englishMode, setEnglishMode] = useState<boolean>(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    const saved = localStorage.getItem("darkMode");
+    const initialValue = JSON.parse(saved!);
+    return initialValue;
+  });
+  const [englishMode, setEnglishMode] = useState(() => {
+    const saved = localStorage.getItem("englishMode");
+    const initialValue = JSON.parse(saved!);
+    return initialValue;
+  });
 
   const handleToggleLanguage = () => {
     setEnglishMode(!englishMode);
-    localStorage.setItem("darkMode", JSON.stringify(darkMode));
   };
 
   const handleToggleTheme = () => {
@@ -37,15 +44,28 @@ const ThemeModeProvider = (props: { children: ReactNode }) => {
 
   useEffect(() => {
     localStorage.setItem("darkMode", JSON.stringify(darkMode));
-  }, [darkMode]);
+    localStorage.setItem("englishMode", JSON.stringify(englishMode));
+  }, [darkMode, englishMode]);
 
-  useEffect(() => {
-    const darkMode = JSON.parse(localStorage.getItem("darkMode") || "");
-    if (darkMode) {
-      setDarkMode(darkMode);
-    }
-    // eslint-disable-next-line
-  }, []);
+  // useEffect(() => {
+  //   const mode = JSON.parse(localStorage.getItem("darkMode") || "");
+  //   if (darkMode) {
+  //     setDarkMode(!darkMode);
+  //   }
+  //   // eslint-disable-next-line
+  // }, []);
+
+  // useEffect(() => {
+  //   localStorage.setItem("darkMode", JSON.stringify(darkMode));
+  // }, [darkMode]);
+
+  // useEffect(() => {
+  //   const darkMode = JSON.parse(localStorage.getItem("darkMode") || "");
+  //   if (darkMode) {
+  //     setDarkMode(darkMode);
+  //   }
+  //   // eslint-disable-next-line
+  // }, []);
 
   return (
     <ThemeModeContext.Provider
