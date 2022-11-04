@@ -47,26 +47,6 @@ const ThemeModeProvider = (props: { children: ReactNode }) => {
     localStorage.setItem("englishMode", JSON.stringify(englishMode));
   }, [darkMode, englishMode]);
 
-  // useEffect(() => {
-  //   const mode = JSON.parse(localStorage.getItem("darkMode") || "");
-  //   if (darkMode) {
-  //     setDarkMode(!darkMode);
-  //   }
-  //   // eslint-disable-next-line
-  // }, []);
-
-  // useEffect(() => {
-  //   localStorage.setItem("darkMode", JSON.stringify(darkMode));
-  // }, [darkMode]);
-
-  // useEffect(() => {
-  //   const darkMode = JSON.parse(localStorage.getItem("darkMode") || "");
-  //   if (darkMode) {
-  //     setDarkMode(darkMode);
-  //   }
-  //   // eslint-disable-next-line
-  // }, []);
-
   return (
     <ThemeModeContext.Provider
       value={{
