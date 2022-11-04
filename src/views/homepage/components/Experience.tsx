@@ -15,8 +15,11 @@ const Experience = (props: Props) => {
       <Col xs={12}>
         {experience.map((exp, i) => {
           return (
-            <AnimationOnScroll animateIn="animate__fadeIn animate__delay-1s">
-              <Col key={i} className="mb-5 experience-box">
+            <AnimationOnScroll
+              key={i}
+              animateIn="animate__fadeIn animate__delay-1s"
+            >
+              <Col className="mb-5 experience-box">
                 <h3>{englishMode ? exp.spTitle : exp.enTitle}</h3>
                 <span className="small">
                   {exp.location + " / " + exp.startDate + " - " + exp.endDate}
