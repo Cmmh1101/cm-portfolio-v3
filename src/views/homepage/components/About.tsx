@@ -43,12 +43,12 @@ const About = () => {
                       })}
                 </AnimationOnScroll>
               </Col>
-              <Col xs={12} lg={6} className="px-5 my-5 my-lg-0">
+              <Col xs={8} lg={6} className="px-5 my-5 my-lg-0">
                 <AnimationOnScroll animateIn="animate__fadeIn animate__delay-1s">
                   <img
                     className="w-100 shadow"
                     style={{ borderRadius: "50%" }}
-                    src="../images/general/pic-carla.png"
+                    src="../images/general/profile-carla.png"
                     alt="logo"
                   />
                 </AnimationOnScroll>
