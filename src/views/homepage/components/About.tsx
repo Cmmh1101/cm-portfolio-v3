@@ -47,7 +47,8 @@ const About = () => {
                 <AnimationOnScroll animateIn="animate__fadeIn animate__delay-1s">
                   <img
                     className="w-100 shadow"
-                    src="../images/general/profile-carla.png"
+                    style={{ borderRadius: "50%" }}
+                    src="../images/general/pic-carla.png"
                     alt="logo"
                   />
                 </AnimationOnScroll>

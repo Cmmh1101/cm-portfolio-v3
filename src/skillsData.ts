@@ -71,12 +71,12 @@ const skills = [
       path: "../images/skills/cib-jest.svg",
       type: "dev"
       },
-      {
-      name: "redux",
-      title: "Redux",
-      path: "../images/skills/cib-redux.svg",
-      type: "dev"
-      },
+      // {
+      // name: "redux",
+      // title: "Redux",
+      // path: "../images/skills/cib-redux.svg",
+      // type: "dev"
+      // },
       {
       name: "mongo",
       title: "MongoDB",
@@ -89,18 +89,18 @@ const skills = [
       path: "../images/skills/nodejs.svg",
       type: "dev"
       },
-      {
-      name: "npm",
-      title: "NPM",
-      path: "../images/skills/cib-npm.svg",
-      type: "dev"
-      },
-      {
-      name: "postman",
-      title: "Postman",
-      path: "../images/skills/cib-postman.svg",
-      type: "dev"
-      },
+      // {
+      // name: "npm",
+      // title: "NPM",
+      // path: "../images/skills/cib-npm.svg",
+      // type: "dev"
+      // },
+      // {
+      // name: "postman",
+      // title: "Postman",
+      // path: "../images/skills/cib-postman.svg",
+      // type: "dev"
+      // },
       {
       name: "expo",
       title: "Expo",
@@ -179,30 +179,30 @@ const skills = [
       path: "../images/skills/cib-confluence.svg",
       type: "manage"
       },
-      {
-      name: "team",
-      title: "Team Work",
-      path: "../images/skills/cil-fork.svg",
-      type: "soft"
-      },
-      {
-      name: "remote",
-      title: "Remote",
-      path: "../images/skills/cil-globe-alt.svg",
-      type: "soft"
-      },
-      {
-      name: "bilingual",
-      title: "Bilingual",
-      path: "../images/skills/cil-language.svg",
-      type: "soft"
-      },
-      {
-      name: "problem",
-      title: "Problem Solving",
-      path: "../images/skills/cil-puzzle.svg",
-      type: "soft"
-      },
+      // {
+      // name: "team",
+      // title: "Team Work",
+      // path: "../images/skills/cil-fork.svg",
+      // type: "soft"
+      // },
+      // {
+      // name: "remote",
+      // title: "Remote",
+      // path: "../images/skills/cil-globe-alt.svg",
+      // type: "soft"
+      // },
+      // {
+      // name: "bilingual",
+      // title: "Bilingual",
+      // path: "../images/skills/cil-language.svg",
+      // type: "soft"
+      // },
+      // {
+      // name: "problem",
+      // title: "Problem Solving",
+      // path: "../images/skills/cil-puzzle.svg",
+      // type: "soft"
+      // },
       
 ];
 
