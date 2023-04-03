@@ -6,7 +6,7 @@ interface Props {}
 const TestAnimation = (props: Props) => {
   return (
     <div>
-      <AnimationOnScroll animateIn="animate__fadeIn">
+      <AnimationOnScroll animateIn="animate__fadeInUp">
         <h2>Some Text</h2>
       </AnimationOnScroll>
     </div>

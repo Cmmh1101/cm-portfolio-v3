@@ -10,7 +10,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeModeProvider } from "./provider/ThemeModeProvider";
 
-const TRACKING_ID = "UA-12341234-1"; // YOUR_OWN_TRACKING_ID
+const TRACKING_ID = "G-R5E1TCDL6X"; // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
 ReactDOM.render(

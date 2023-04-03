@@ -19,7 +19,7 @@ const Contact = () => {
       <Row xs={12} className="pb-5">
         <Col xs={12} className="connect">
           <SubHeader spTitle="Conversemos" enTitle="Get in touch" />
-          <AnimationOnScroll animateIn="animate__fadeIn animate__delay-1s">
+          <AnimationOnScroll animateIn="animate__fadeInUp animate__delay-1s">
             <Col xs={12} className="connect-image-col">
               <div className="connect-img">
                 <img
