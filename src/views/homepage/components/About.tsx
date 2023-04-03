@@ -33,7 +33,7 @@ const About = () => {
               className="d-flex justify-content-center align-items-center flex-wrap"
             >
               <Col xs={12} lg={6}>
-                <AnimationOnScroll animateIn="animate__fadeIn animate__delay-1s pr-5">
+                <AnimationOnScroll animateIn="animate__fadeInUp animate__delay-1s pr-5">
                   {englishMode
                     ? aboutEsp.map((parragraph, i) => {
                         return <p key={i}>{parragraph}</p>;
@@ -44,7 +44,7 @@ const About = () => {
                 </AnimationOnScroll>
               </Col>
               <Col xs={8} lg={6} className="px-5 my-5 my-lg-0">
-                <AnimationOnScroll animateIn="animate__fadeIn animate__delay-1s">
+                <AnimationOnScroll animateIn="animate__fadeInUp animate__delay-1s">
                   <img
                     className="w-100 shadow"
                     style={{ borderRadius: "50%" }}

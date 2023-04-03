@@ -7,7 +7,6 @@ const AppRouter = () => {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );

@@ -7,7 +7,7 @@ import skills from "../../../skillsData";
 const SkillsList = () => {
   const { darkMode, light } = useTheme();
   return (
-    <AnimationOnScroll animateIn="animate__fadeIn animate__delay-1s">
+    <AnimationOnScroll animateIn="animate__fadeInUp animate__delay-1s">
       <Col xs={12} className="skills-container">
         {skills.map((skill) => {
           return (
