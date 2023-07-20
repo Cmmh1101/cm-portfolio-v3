@@ -8,7 +8,7 @@ const ProjectsList = () => {
   return (
     <div className="my-5">
       <Row>
-        <AnimationOnScroll animateIn="animate__fadeInUp animate__delay-1s">
+        <AnimationOnScroll animateOnce animateIn="animate__fadeInUp" >
           <Col
             xs={12}
             className="d-flex flex-wrap justify-content-evenly align-items-center mt-5"

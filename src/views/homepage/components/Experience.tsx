@@ -17,7 +17,7 @@ const Experience = (props: Props) => {
           return (
             <AnimationOnScroll
               key={i}
-              animateIn="animate__fadeInUp animate__delay-1s"
+              animateIn="animate__fadeInUp animate__delay-1s" animateOnce
             >
               <Col className="mb-5 experience-box">
                 <h3>{englishMode ? exp.spTitle : exp.enTitle}</h3>
