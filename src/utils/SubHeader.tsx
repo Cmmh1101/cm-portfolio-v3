@@ -21,7 +21,7 @@ const SubHeader = ({
 }: Props) => {
   const { englishMode } = useTheme();
   return (
-    <AnimationOnScroll animateIn="animate__fadeInUp">
+    <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
       <div className="sub-header my-5">
         {englishMode ? (
           <>

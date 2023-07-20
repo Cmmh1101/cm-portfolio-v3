@@ -19,6 +19,7 @@ const ProjectList = (props: Props) => {
           return (
             <AnimationOnScroll
               key={i}
+              animateOnce
               animateIn="animate__fadeInUp animate__delay-1s"
             >
               <Col xs={12} className="d-flex flex-wrap project-item">
