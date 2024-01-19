@@ -1,8 +1,8 @@
 const projects = [
       {
       name: "little-italy-east",
-      spTitle: "Organizacion Pagina web",
-      enTitle: "Non-Profit Organization Website",
+      spTitle: "Pagina web informativa de Restaurante",
+      enTitle: "Local Restaurant Informational Website",
       date: "06/26/2023",
       image: "/../../images/projects/little-italy.png",
       spDescription: "La pagina web de un nuevo restaurante local Little Italy East, desarrollada desarrollada con NextJs, TypeScrip y Tailwind CSS.",
